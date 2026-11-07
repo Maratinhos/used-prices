@@ -8,11 +8,12 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f8cff'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BD%3C/text%3E%3C/svg%3E">
-<title>Цены на б/у — Kia Rio IV седан АКПП</title>
+<title>Цены на б/у · Kia Rio IV, Solaris II, Polo V</title>
 <style>
 :root{
   --bg:#0f1115; --card:#171a21; --card2:#1e222b; --line:#2a2f3a;
   --fg:#e9ecf1; --muted:#8b93a3; --accent:#4f8cff; --good:#38d39f; --warn:#ffb02e; --bad:#ff5c5c;
+  --box:#4f8cff; --mean:#ffb02e;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
@@ -25,7 +26,7 @@ h1{font-size:15px;margin:0 0 2px;font-weight:650;letter-spacing:-.01em}
 .sub{color:var(--muted);font-size:11.5px}
 .tabs{display:flex;gap:6px;margin-top:9px}
 .tab{flex:1;text-align:center;padding:7px 0;border-radius:9px;background:var(--card);
-  color:var(--muted);font-size:12.5px;border:1px solid var(--line)}
+  color:var(--muted);font-size:12px;border:1px solid var(--line)}
 .tab.on{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 .filters{padding:10px 12px 4px;display:flex;flex-direction:column;gap:8px}
 .row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
@@ -43,19 +44,15 @@ select{width:100%;background:var(--card);color:var(--fg);border:1px solid var(--
 .item{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 12px}
 .item a{color:inherit;text-decoration:none}
 .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.price{font-size:16.5px;font-weight:700;letter-spacing:-.02em}
-.title{font-size:12.5px;color:var(--muted)}
+.price{font-size:16.5px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.title{font-size:12px;color:var(--muted);text-align:right}
 .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:5px;color:var(--muted);font-size:12px}
 .est{margin-top:7px;display:flex;justify-content:space-between;align-items:center;gap:8px;
   border-top:1px dashed var(--line);padding-top:7px;font-size:12px}
-.badge{padding:2px 7px;border-radius:6px;font-size:11px;font-weight:600}
+.badge{padding:2px 7px;border-radius:6px;font-size:11px;font-weight:600;white-space:nowrap}
 .b-good{background:rgba(56,211,159,.14);color:var(--good)}
 .b-warn{background:rgba(255,176,46,.14);color:var(--warn)}
 .b-bad{background:rgba(255,92,92,.14);color:var(--bad)}
-table{width:100%;border-collapse:collapse;font-size:12px;margin:0 0 12px}
-th,td{padding:6px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
-th:first-child,td:first-child{text-align:left}
-th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
 .srow{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
 .stop{font-size:13px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .sn{color:var(--muted);font-size:11.5px;white-space:nowrap}
@@ -65,14 +62,20 @@ th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
 .note{color:var(--muted);font-size:12px;padding:0 12px 12px}
 .hidden{display:none}
 .foot{color:var(--muted);font-size:11px;padding:14px 12px 0;text-align:center}
+.legend{display:flex;gap:12px;flex-wrap:wrap;padding:2px 12px 8px;color:var(--muted);font-size:11.5px}
+.legend i{display:inline-block;width:14px;height:8px;border-radius:2px;margin-right:4px;vertical-align:middle}
+#chart{padding:0 4px}
+svg{display:block;width:100%;height:auto}
+.ctip{color:var(--muted);font-size:11.5px;padding:0 12px 10px}
 </style>
 </head>
 <body>
 <header>
-  <h1 id="h1">Kia Rio IV · седан · АКПП</h1>
+  <h1 id="h1">Цены на б/у · седан · АКПП</h1>
   <div class="sub" id="sub"></div>
   <div class="tabs">
     <div class="tab on" data-tab="list">Объявления</div>
+    <div class="tab" data-tab="chart">График</div>
     <div class="tab" data-tab="sum">Сводка</div>
     <div class="tab" data-tab="how">Методика</div>
   </div>
@@ -80,6 +83,7 @@ th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
 
 <div id="tab-list">
   <div class="filters">
+    <div class="row" id="f-model"></div>
     <div class="row" id="f-year"></div>
     <div class="row" id="f-mil"></div>
     <select id="f-sort">
@@ -94,7 +98,20 @@ th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
   <div class="list" id="list"></div>
 </div>
 
+<div id="tab-chart" class="hidden">
+  <div class="filters"><div class="row" id="f-model2"></div></div>
+  <div class="legend">
+    <span><i style="background:var(--box)"></i>оценка авто.ру</span>
+    <span>│ усы — мин/макс объявлений</span>
+    <span>● медиана</span>
+    <span>▲ средняя</span>
+  </div>
+  <div id="chart"></div>
+  <div class="ctip" id="ctip"></div>
+</div>
+
 <div id="tab-sum" class="hidden">
+  <div class="filters"><div class="row" id="f-model3"></div></div>
   <div class="wrap" id="sum"></div>
   <div class="note">Медиана и квартили — по ценам в объявлениях. «Оценка» — медиана диапазонов авто.ру по машинам этой группы.</div>
 </div>
@@ -106,11 +123,11 @@ th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
 <div class="foot">данные: <span id="srcs"></span> · обновлено <span id="upd"></span></div>
 
 <script>
-const DATA = [{"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.4, "hp": 100, "mileage": 298650, "price": 919000, "trans": "Автомат", "city": "Сочи, площадь Флага", "url": "https://auto.ru/cars/used/sale/kia/rio/1160678635-ec3d1645/", "est_lo": 733000, "est_hi": 900000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.4, "hp": 100, "mileage": 193530, "price": 950000, "trans": "Автомат", "city": "Сочи", "url": "https://auto.ru/cars/used/sale/kia/rio/1131529900-68fcd826/", "est_lo": 839000, "est_hi": 990000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 200000, "price": 1100000, "trans": "Автомат", "city": "Тихорецк", "url": "https://auto.ru/cars/used/sale/kia/rio/1133963636-190f73df/", "est_lo": 978000, "est_hi": 1140000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.4, "hp": 100, "mileage": 200000, "price": 1130000, "trans": "Автомат", "city": "Анапа", "url": "https://auto.ru/cars/used/sale/kia/rio/1160489446-81959e91/", "est_lo": 889000, "est_hi": 1023000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 160000, "price": 1200000, "trans": "Автомат", "city": "Анапа, Астраханская улица, 99", "url": "https://auto.ru/cars/used/sale/kia/rio/1131040391-0acb92c7/", "est_lo": 1180000, "est_hi": 1309000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 207195, "price": 1250000, "trans": "Автомат", "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1", "url": "https://auto.ru/cars/used/sale/kia/rio/1160510836-71300728/", "est_lo": 868000, "est_hi": 1032000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 73191, "price": 1325000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 14/4", "url": "https://auto.ru/cars/used/sale/kia/rio/1160603257-87f33c9f/", "est_lo": 1294000, "est_hi": 1459000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 148330, "price": 1345000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 22/7", "url": "https://auto.ru/cars/used/sale/kia/rio/1160515886-dba97980/", "est_lo": 1191000, "est_hi": 1350000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 157000, "price": 1350000, "trans": "Автомат", "city": "Краснодар, посёлок Калинино", "url": "https://auto.ru/cars/used/sale/kia/rio/1126990460-7b7b827d/", "est_lo": 998000, "est_hi": 1145000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 138000, "price": 1350000, "trans": "Автомат", "city": "Новороссийск", "url": "https://auto.ru/cars/used/sale/kia/rio/1132320829-51e3ba6c/", "est_lo": 1054000, "est_hi": 1199000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 47188, "price": 1399000, "trans": "Автомат", "city": "Краснодар, Аэропортовская улица, 4", "url": "https://auto.ru/cars/used/sale/kia/rio/1160658817-4fe630f9/", "est_lo": 1310000, "est_hi": 1494000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 104000, "price": 1399000, "trans": "Автомат", "city": "Краснодар, улица имени Дзержинского, 231/2", "url": "https://auto.ru/cars/used/sale/kia/rio/1160117955-d2fa12b1/", "est_lo": 1264000, "est_hi": 1398000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 74400, "price": 1400000, "trans": "Автомат", "city": "Краснодар, жилой район Лазаревское", "url": "https://auto.ru/cars/used/sale/kia/rio/1132177007-d957f12f/", "est_lo": 1313000, "est_hi": 1465000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 92000, "price": 1404000, "trans": "Автомат", "city": "Сочи, улица 20 Горнострелковой дивизии, 16", "url": "https://auto.ru/cars/used/sale/kia/rio/1160509312-718cab0d/", "est_lo": 1127000, "est_hi": 1283000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 81000, "price": 1424000, "trans": "Автомат", "city": "Краснодар, Аэропортовская улица, 4", "url": "https://auto.ru/cars/used/sale/kia/rio/1133911787-d9b51a16/", "est_lo": 1365000, "est_hi": 1534000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 83499, "price": 1430000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 5", "url": "https://auto.ru/cars/used/sale/kia/rio/1160568937-b0813d79/", "est_lo": 1305000, "est_hi": 1447000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 58000, "price": 1453000, "trans": "Автомат", "city": "Сочи, улица Новая Заря, 7", "url": "https://auto.ru/cars/used/sale/kia/rio/1133573795-d156524c/", "est_lo": 1424000, "est_hi": 1571000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 70000, "price": 1460000, "trans": "Автомат", "city": "Курганинск, Курганинское городское поселение", "url": "https://auto.ru/cars/used/sale/kia/rio/1160098973-762b5131/", "est_lo": 1204000, "est_hi": 1364000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 155394, "price": 1485000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 5", "url": "https://auto.ru/cars/used/sale/kia/rio/1134083843-8e085fac/", "est_lo": 1198000, "est_hi": 1332000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.4, "hp": 100, "mileage": 54000, "price": 1490000, "trans": "Автомат", "city": "Краснодар, Конгрессная улица, 31", "url": "https://auto.ru/cars/used/sale/kia/rio/1160449182-e9c06845/", "est_lo": 1146000, "est_hi": 1293000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 128000, "price": 1550000, "trans": "Автомат", "city": "Геленджик", "url": "https://auto.ru/cars/used/sale/kia/rio/1131751087-42dd230c/", "est_lo": 1145000, "est_hi": 1283000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 161336, "price": 1564000, "trans": "Автомат", "city": "Краснодар, Старокубанская улица, 122/1", "url": "https://auto.ru/cars/used/sale/kia/rio/1133325233-176932db/", "est_lo": 1262000, "est_hi": 1407000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 72180, "price": 1600000, "trans": "Автомат", "city": "Тимашевск, Интернациональная улица", "url": "https://auto.ru/cars/used/sale/kia/rio/1134049399-90a36adc/", "est_lo": 1241000, "est_hi": 1388000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 115000, "price": 1650000, "trans": "Автомат", "city": "Краснодар, станица Новотитаровская", "url": "https://auto.ru/cars/used/sale/kia/rio/1131833453-ca655bf9/", "est_lo": 1268000, "est_hi": 1426000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 78000, "price": 1650000, "trans": "Автомат", "city": "Сочи, улица Славы, 24", "url": "https://auto.ru/cars/used/sale/kia/rio/1127869650-a8c5fb7b/", "est_lo": 1329000, "est_hi": 1471000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 18128, "price": 1650000, "trans": "Автомат", "city": "Кореновск, улица Венеры Павленко, 33", "url": "https://auto.ru/cars/used/sale/kia/rio/1160604881-a7afc2d1/", "est_lo": 1307000, "est_hi": 1445000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 61000, "price": 1680000, "trans": "Автомат", "city": "Краснодар, Питерская улица, 40", "url": "https://auto.ru/cars/used/sale/kia/rio/1127442194-3bc597fb/", "est_lo": 1342000, "est_hi": 1503000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 44000, "price": 1750000, "trans": "Автомат", "city": "Краснодар, Восточно-Кругликовская улица, 82", "url": "https://auto.ru/cars/used/sale/kia/rio/1131471621-66cf8bba/", "est_lo": 1283000, "est_hi": 1431000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 70500, "price": 1850000, "trans": "Автомат", "city": "Краснодар, улица Григория Булгакова, 10, подъезд 1", "url": "https://auto.ru/cars/used/sale/kia/rio/1131774837-a7f9cab0/", "est_lo": 1340000, "est_hi": 1501000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 11781, "price": 2049000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 22/7", "url": "https://auto.ru/cars/used/sale/kia/rio/1160355826-cc5b8599/", "est_lo": 1493000, "est_hi": 1690000}];
-const META = {"region": "Краснодар +200 км", "updated": "07.11.2026", "sources": ["auto.ru"], "how": "Собрано с auto.ru: «С пробегом», регион «Краснодар +200 км», фильтр «Без ДТП», только седан + автомат, поколение IV (2017–2020), рестайлинг не включён.<br><br>«Оценка» — диапазон авто.ру «с учётом техсостояния» по конкретной машине: учитывает пробег, число владельцев, комплектацию и историю. «Цена к оценке» — цена объявления к середине этого диапазона: зелёный ≤ 0%, жёлтый до +15%, красный выше.<br><br>Цены — запросы продавцов, не цены сделок. Данные обновляются вручную."};
+const DATA = [{"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 306000, "price": 1220000, "trans": "Автомат", "city": "Мамхег, Советская улица, 48", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131161932-f67960a7/", "est_lo": 823000, "est_hi": 969000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 45372, "price": 1230000, "trans": "Автомат", "city": "Лазаревское", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160531429-e04293a9/", "est_lo": 1259000, "est_hi": 1400000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 153000, "price": 1265000, "trans": "Автомат", "city": "Краснодар, Аэропортовская улица, 6/1", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133261555-b0a73e77/", "est_lo": 1201000, "est_hi": 1367000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 212000, "price": 1300000, "trans": "Автомат", "city": "Сочи, улица Ленина, 156", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132630145-f795ca87/", "est_lo": 1005000, "est_hi": 1165000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.4, "hp": 100, "mileage": 170000, "price": 1320000, "trans": "Автомат", "city": "Краснодар, улица Яна Полуяна, 17", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133187796-9ddd3ded/", "est_lo": 989000, "est_hi": 1127000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 188849, "price": 1348000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 14/4", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160352089-09902668/", "est_lo": 1021000, "est_hi": 1196000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 181728, "price": 1350000, "trans": "Автомат", "city": "Ейск, Николаевская улица", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1129391000-46bfbb81/", "est_lo": 745000, "est_hi": 898000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 125500, "price": 1355000, "trans": "Автомат", "city": "Апшеронск", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160013709-3c8ee427/", "est_lo": 1103000, "est_hi": 1255000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 140141, "price": 1374000, "trans": "Автомат", "city": "Новороссийск, территория Цемдолина, Промышленная улица, 1Г", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160456969-75d4dfb6/", "est_lo": 1102000, "est_hi": 1262000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 64539, "price": 1439000, "trans": "Автомат", "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1134247557-bd89560c/", "est_lo": 1357000, "est_hi": 1534000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2020, "vol": 1.4, "hp": 100, "mileage": 48076, "price": 1449000, "trans": "Автомат", "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160067663-29ac917a/", "est_lo": 1321000, "est_hi": 1495000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 130000, "price": 1450000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1134005606-972a89cc/", "est_lo": 1168000, "est_hi": 1318000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.4, "hp": 100, "mileage": 36000, "price": 1450000, "trans": "Автомат", "city": "Керчь", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1114845657-7ffb7697/", "est_lo": 1235000, "est_hi": 1383000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 85700, "price": 1450000, "trans": "Автомат", "city": "Адыгейск", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131918830-e2a81f6b/", "est_lo": 1035000, "est_hi": 1190000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 109599, "price": 1495000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 4", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160635943-bc35ab2e/", "est_lo": 1316000, "est_hi": 1474000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 83000, "price": 1500000, "trans": "Автомат", "city": "Раевская", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132596425-5bcb383e/", "est_lo": 1202000, "est_hi": 1341000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 106000, "price": 1580000, "trans": "Автомат", "city": "Краснодар, микрорайон Восточно-Кругликовский", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132878940-9050d67e/", "est_lo": 1139000, "est_hi": 1291000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 60000, "price": 1600000, "trans": "Автомат", "city": "Анапа", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127974096-147544bd/", "est_lo": 1357000, "est_hi": 1503000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 41800, "price": 1645000, "trans": "Автомат", "city": "Яблоновский, Дорожная улица, 1/1", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1120835992-0844d154/", "est_lo": 1428000, "est_hi": 1617000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 115000, "price": 1670000, "trans": "Автомат", "city": "Сочи", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1122734532-ef49d1dd/", "est_lo": 1196000, "est_hi": 1342000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 43500, "price": 1700000, "trans": "Автомат", "city": "Краснодар, площадь Флага", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1128633145-50c1d746/", "est_lo": 1345000, "est_hi": 1481000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 38000, "price": 1750000, "trans": "Автомат", "city": "Армавир, улица Ковтюха, No:445", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132230184-d4a478fe/", "est_lo": 1449000, "est_hi": 1592000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 55000, "price": 1850000, "trans": "Автомат", "city": "Сочи, Ворошиловоградская 256", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1122130454-8efa03f4/", "est_lo": 1291000, "est_hi": 1447000}, {"source": "auto.ru", "model": "Hyundai Solaris II", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 70785, "price": 2000000, "trans": "Автомат", "city": "Тешебс, улица Ленина, 63", "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126539187-59f11a62/", "est_lo": 1352000, "est_hi": 1498000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.4, "hp": 100, "mileage": 298650, "price": 919000, "trans": "Автомат", "city": "Сочи, площадь Флага", "url": "https://auto.ru/cars/used/sale/kia/rio/1160678635-ec3d1645/", "est_lo": 733000, "est_hi": 900000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.4, "hp": 100, "mileage": 193530, "price": 950000, "trans": "Автомат", "city": "Сочи", "url": "https://auto.ru/cars/used/sale/kia/rio/1131529900-68fcd826/", "est_lo": 839000, "est_hi": 990000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 200000, "price": 1100000, "trans": "Автомат", "city": "Тихорецк", "url": "https://auto.ru/cars/used/sale/kia/rio/1133963636-190f73df/", "est_lo": 978000, "est_hi": 1140000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.4, "hp": 100, "mileage": 200000, "price": 1130000, "trans": "Автомат", "city": "Анапа", "url": "https://auto.ru/cars/used/sale/kia/rio/1160489446-81959e91/", "est_lo": 889000, "est_hi": 1023000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 160000, "price": 1200000, "trans": "Автомат", "city": "Анапа, Астраханская улица, 99", "url": "https://auto.ru/cars/used/sale/kia/rio/1131040391-0acb92c7/", "est_lo": 1180000, "est_hi": 1309000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 207195, "price": 1250000, "trans": "Автомат", "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1", "url": "https://auto.ru/cars/used/sale/kia/rio/1160510836-71300728/", "est_lo": 868000, "est_hi": 1032000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 73191, "price": 1325000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 14/4", "url": "https://auto.ru/cars/used/sale/kia/rio/1160603257-87f33c9f/", "est_lo": 1294000, "est_hi": 1459000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 148330, "price": 1345000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 22/7", "url": "https://auto.ru/cars/used/sale/kia/rio/1160515886-dba97980/", "est_lo": 1191000, "est_hi": 1350000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 157000, "price": 1350000, "trans": "Автомат", "city": "Краснодар, посёлок Калинино", "url": "https://auto.ru/cars/used/sale/kia/rio/1126990460-7b7b827d/", "est_lo": 998000, "est_hi": 1145000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 138000, "price": 1350000, "trans": "Автомат", "city": "Новороссийск", "url": "https://auto.ru/cars/used/sale/kia/rio/1132320829-51e3ba6c/", "est_lo": 1054000, "est_hi": 1199000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 47188, "price": 1399000, "trans": "Автомат", "city": "Краснодар, Аэропортовская улица, 4", "url": "https://auto.ru/cars/used/sale/kia/rio/1160658817-4fe630f9/", "est_lo": 1310000, "est_hi": 1494000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 104000, "price": 1399000, "trans": "Автомат", "city": "Краснодар, улица имени Дзержинского, 231/2", "url": "https://auto.ru/cars/used/sale/kia/rio/1160117955-d2fa12b1/", "est_lo": 1264000, "est_hi": 1398000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 74400, "price": 1400000, "trans": "Автомат", "city": "Краснодар, жилой район Лазаревское", "url": "https://auto.ru/cars/used/sale/kia/rio/1132177007-d957f12f/", "est_lo": 1313000, "est_hi": 1465000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 92000, "price": 1404000, "trans": "Автомат", "city": "Сочи, улица 20 Горнострелковой дивизии, 16", "url": "https://auto.ru/cars/used/sale/kia/rio/1160509312-718cab0d/", "est_lo": 1127000, "est_hi": 1283000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 81000, "price": 1424000, "trans": "Автомат", "city": "Краснодар, Аэропортовская улица, 4", "url": "https://auto.ru/cars/used/sale/kia/rio/1133911787-d9b51a16/", "est_lo": 1365000, "est_hi": 1534000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 83499, "price": 1430000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 5", "url": "https://auto.ru/cars/used/sale/kia/rio/1160568937-b0813d79/", "est_lo": 1305000, "est_hi": 1447000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 58000, "price": 1453000, "trans": "Автомат", "city": "Сочи, улица Новая Заря, 7", "url": "https://auto.ru/cars/used/sale/kia/rio/1133573795-d156524c/", "est_lo": 1424000, "est_hi": 1571000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 70000, "price": 1460000, "trans": "Автомат", "city": "Курганинск, Курганинское городское поселение", "url": "https://auto.ru/cars/used/sale/kia/rio/1160098973-762b5131/", "est_lo": 1204000, "est_hi": 1364000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2017, "vol": 1.6, "hp": 123, "mileage": 155394, "price": 1485000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 5", "url": "https://auto.ru/cars/used/sale/kia/rio/1134083843-8e085fac/", "est_lo": 1198000, "est_hi": 1332000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.4, "hp": 100, "mileage": 54000, "price": 1490000, "trans": "Автомат", "city": "Краснодар, Конгрессная улица, 31", "url": "https://auto.ru/cars/used/sale/kia/rio/1160449182-e9c06845/", "est_lo": 1146000, "est_hi": 1293000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 128000, "price": 1550000, "trans": "Автомат", "city": "Геленджик", "url": "https://auto.ru/cars/used/sale/kia/rio/1131751087-42dd230c/", "est_lo": 1145000, "est_hi": 1283000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 161336, "price": 1564000, "trans": "Автомат", "city": "Краснодар, Старокубанская улица, 122/1", "url": "https://auto.ru/cars/used/sale/kia/rio/1133325233-176932db/", "est_lo": 1262000, "est_hi": 1407000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 72180, "price": 1600000, "trans": "Автомат", "city": "Тимашевск, Интернациональная улица", "url": "https://auto.ru/cars/used/sale/kia/rio/1134049399-90a36adc/", "est_lo": 1241000, "est_hi": 1388000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 115000, "price": 1650000, "trans": "Автомат", "city": "Краснодар, станица Новотитаровская", "url": "https://auto.ru/cars/used/sale/kia/rio/1131833453-ca655bf9/", "est_lo": 1268000, "est_hi": 1426000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 78000, "price": 1650000, "trans": "Автомат", "city": "Сочи, улица Славы, 24", "url": "https://auto.ru/cars/used/sale/kia/rio/1127869650-a8c5fb7b/", "est_lo": 1329000, "est_hi": 1471000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 18128, "price": 1650000, "trans": "Автомат", "city": "Кореновск, улица Венеры Павленко, 33", "url": "https://auto.ru/cars/used/sale/kia/rio/1160604881-a7afc2d1/", "est_lo": 1307000, "est_hi": 1445000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2020, "vol": 1.6, "hp": 123, "mileage": 61000, "price": 1680000, "trans": "Автомат", "city": "Краснодар, Питерская улица, 40", "url": "https://auto.ru/cars/used/sale/kia/rio/1127442194-3bc597fb/", "est_lo": 1342000, "est_hi": 1503000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2018, "vol": 1.6, "hp": 123, "mileage": 44000, "price": 1750000, "trans": "Автомат", "city": "Краснодар, Восточно-Кругликовская улица, 82", "url": "https://auto.ru/cars/used/sale/kia/rio/1131471621-66cf8bba/", "est_lo": 1283000, "est_hi": 1431000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 70500, "price": 1850000, "trans": "Автомат", "city": "Краснодар, улица Григория Булгакова, 10, подъезд 1", "url": "https://auto.ru/cars/used/sale/kia/rio/1131774837-a7f9cab0/", "est_lo": 1340000, "est_hi": 1501000}, {"source": "auto.ru", "model": "Kia Rio IV", "year": 2019, "vol": 1.6, "hp": 123, "mileage": 11781, "price": 2049000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 22/7", "url": "https://auto.ru/cars/used/sale/kia/rio/1160355826-cc5b8599/", "est_lo": 1493000, "est_hi": 1690000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2015, "vol": 1.6, "hp": 105, "mileage": 80500, "price": 850000, "trans": "Автомат", "city": "Благовещенская, Таманская улица, 65", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132819362-a65461b0/", "est_lo": 1004000, "est_hi": 1146000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2017, "vol": 1.6, "hp": 110, "mileage": 223000, "price": 950000, "trans": "Автомат", "city": "Краснодар, улица Братьев Черников, 49", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131534459-49517373/", "est_lo": 798000, "est_hi": 955000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2015, "vol": 1.6, "hp": 105, "mileage": 171000, "price": 980000, "trans": "Автомат", "city": "Керчь, улица Блюхера, 23", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130055417-9ca25d07/", "est_lo": 839000, "est_hi": 1017000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 201000, "price": 1100000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1125749512-55ee4586/", "est_lo": 938000, "est_hi": 1094000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 144741, "price": 1110000, "trans": "Автомат", "city": "Краснодар, Ростовское шоссе, 22/7", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160494195-94ba2683/", "est_lo": 1029000, "est_hi": 1215000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 146000, "price": 1125000, "trans": "Автомат", "city": "Геленджик", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1121019447-45689094/", "est_lo": 941000, "est_hi": 1125000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 158499, "price": 1150000, "trans": "Автомат", "city": "Краснодар, улица Александра Покрышкина, 13", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160650847-8d775033/", "est_lo": 1066000, "est_hi": 1225000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 150000, "price": 1180000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129304959-69eb9b01/", "est_lo": 1015000, "est_hi": 1168000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 200000, "price": 1190000, "trans": "Автомат", "city": "Армавир", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160191266-d4749c26/", "est_lo": 862000, "est_hi": 1025000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 180000, "price": 1200000, "trans": "Автомат", "city": "Сочи", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130929115-cfd38ac6/", "est_lo": 1000000, "est_hi": 1158000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2017, "vol": 1.6, "hp": 110, "mileage": 119337, "price": 1213000, "trans": "Автомат", "city": "Новая Адыгея, улица Тургеневское шоссе, 12В/1", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160517568-fb5ed0c9/", "est_lo": 1066000, "est_hi": 1233000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2017, "vol": 1.6, "hp": 110, "mileage": 76453, "price": 1340000, "trans": "Автомат", "city": "Краснодар, Горячеключевская улица, 5", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160608306-5e2deee8/", "est_lo": 1145000, "est_hi": 1334000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 160000, "price": 1350000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160555931-bf4be6e5/", "est_lo": 1044000, "est_hi": 1202000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 127060, "price": 1387000, "trans": "Автомат", "city": "Краснодар, Прикубанский внутригородской округ, микрорайон имени Петра Метальникова, улица Петра Метальникова, 1Г", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160354135-5c8b06cb/", "est_lo": 1146000, "est_hi": 1318000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 81000, "price": 1500000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133715966-8c02e6fa/", "est_lo": 1110000, "est_hi": 1273000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 88000, "price": 1500000, "trans": "Автомат", "city": "Анапа, жилой комплекс Два Адмирала", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131005016-46e33e73/", "est_lo": 1146000, "est_hi": 1303000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2018, "vol": 1.6, "hp": 110, "mileage": 126000, "price": 1500000, "trans": "Автомат", "city": "Армавир, площадь Ленина", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160598190-6139f735/", "est_lo": 1032000, "est_hi": 1197000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 99900, "price": 1515000, "trans": "Автомат", "city": "Краснодар", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133718653-1abf7236/", "est_lo": 1026000, "est_hi": 1203000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2019, "vol": 1.6, "hp": 110, "mileage": 148031, "price": 1550000, "trans": "Автомат", "city": "Краснодар, жилой комплекс Грани", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131526911-a7345690/", "est_lo": 1046000, "est_hi": 1205000}, {"source": "auto.ru", "model": "Volkswagen Polo V Рестайлинг", "year": 2020, "vol": 1.6, "hp": 110, "mileage": 89000, "price": 1570000, "trans": "Автомат", "city": "Краснодар, Первомайская улица, 4Ак1, подъезд 1", "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132106895-18947c40/", "est_lo": 1194000, "est_hi": 1357000}];
+const META = {"region": "Краснодар +200 км", "updated": "07.11.2026", "sources": ["auto.ru"], "models": ["Kia Rio IV", "Hyundai Solaris II", "Volkswagen Polo V Рестайлинг"], "how": "Собрано с auto.ru: «С пробегом», регион «Краснодар +200 км», фильтр «Без ДТП», только седан + автомат. Поколения: Kia Rio IV (2017–2020), Hyundai Solaris II (2017–2020), Volkswagen Polo V Рестайлинг (2014–2020) — рестайлинги Rio и Solaris не включены.<br><br>«Оценка» — диапазон авто.ру «с учётом техсостояния» по конкретной машине: пробег, число владельцев, комплектация, история. «Цена к оценке» — цена объявления к середине диапазона: зелёный ≤ 0%, жёлтый до +15%, красный выше.<br><br>На графике: усы — минимум и максимум цен в объявлениях, бокс — оценочный диапазон авто.ру, ● медиана и ▲ средняя по фактическим ценам.<br><br>Цены — запросы продавцов, не цены сделок."};
 const money = n => n==null ? '—' : n.toLocaleString('ru-RU').replace(/\u00a0/g,' ') + ' ₽';
-const k = n => n==null ? '—' : Math.round(n/1000) + ' тыс';
 const kmoney = n => n==null ? '—' : (n>=1000000 ? (n/1000000).toFixed(2).replace('.',',')+' млн ₽' : Math.round(n/1000)+' тыс ₽');
+const short = n => n==null ? '—' : (n>=1000000 ? (n/1e6).toFixed(2).replace('.',',')+' млн' : Math.round(n/1000)+' тыс');
 const range = (lo,hi) => {
   if(lo==null||hi==null) return '—';
   if(lo>=1000000 && hi>=1000000) return (lo/1e6).toFixed(2).replace('.',',')+'–'+(hi/1e6).toFixed(2).replace('.',',')+' млн ₽';
@@ -118,24 +135,27 @@ const range = (lo,hi) => {
   return kmoney(lo)+'–'+kmoney(hi);
 };
 
-let state = {year:'all', mil:'all', sort:'price-asc', model:'all'};
+const MODELS = META.models || [...new Set(DATA.map(r=>r.model))];
+const SHORT = {'Kia Rio IV':'Rio IV','Hyundai Solaris II':'Solaris II','Volkswagen Polo V Рестайлинг':'Polo V рест.'};
+let state = {model:'all', year:'all', mil:'all', sort:'price-asc'};
 
 function dev(r){
   if(!r.est_lo || !r.est_hi) return null;
-  const mid = (r.est_lo + r.est_hi)/2;
-  return (r.price/mid - 1) * 100;
+  return (r.price/((r.est_lo + r.est_hi)/2) - 1) * 100;
+}
+function byModel(){
+  return state.model==='all' ? DATA : DATA.filter(r=>r.model===state.model);
 }
 function filt(){
-  return DATA.filter(r =>
-    (state.year==='all' || r.year==state.year) &&
+  return byModel().filter(r =>
+    (state.year==='all' || r.year===state.year) &&
     (state.mil==='all' || (state.mil==='lt75' && r.mileage<75000) ||
       (state.mil==='75_150' && r.mileage>=75000 && r.mileage<150000) ||
       (state.mil==='gt150' && r.mileage>=150000))
   );
 }
 function sortRows(rows){
-  const s = state.sort;
-  const cp = (a,b)=>a.price-b.price;
+  const s = state.sort, cp = (a,b)=>a.price-b.price;
   if(s==='price-asc') rows.sort(cp);
   if(s==='price-desc') rows.sort((a,b)=>b.price-a.price);
   if(s==='mile-asc') rows.sort((a,b)=>a.mileage-b.mileage);
@@ -145,19 +165,36 @@ function sortRows(rows){
 }
 function med(a){ if(!a.length) return null; const b=[...a].sort((x,y)=>x-y); const m=b.length>>1;
   return b.length%2 ? b[m] : Math.round((b[m-1]+b[m])/2); }
+function quant(a,t){ const b=[...a].sort((x,y)=>x-y); if(!b.length) return null;
+  const k=(b.length-1)*t, f=Math.floor(k), c=Math.min(f+1,b.length-1);
+  return Math.round(b[f]+(b[c]-b[f])*(k-f)); }
+function mean(a){ return a.length ? Math.round(a.reduce((x,y)=>x+y,0)/a.length) : null; }
+
+function modelChips(el){
+  if(!el) return;
+  el.innerHTML = `<div class="chip ${state.model==='all'?'on':''}" data-m="all">Все модели</div>` +
+    MODELS.map(m=>`<div class="chip ${state.model===m?'on':''}" data-m="${m}">${SHORT[m]||m}</div>`).join('');
+  el.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    state.model = c.dataset.m; state.year='all';
+    renderAll();
+  });
+}
 
 function renderChips(){
-  const years = [...new Set(DATA.map(r=>r.year))].sort();
+  const years = [...new Set(byModel().map(r=>r.year))].sort();
   document.getElementById('f-year').innerHTML =
     `<div class="chip ${state.year==='all'?'on':''}" data-k="year" data-v="all">Все годы</div>` +
     years.map(y=>`<div class="chip ${state.year===y?'on':''}" data-k="year" data-v="${y}">${y}</div>`).join('');
   const mils = [['all','Любой пробег'],['lt75','до 75 тыс'],['75_150','75–150 тыс'],['gt150','150+ тыс']];
   document.getElementById('f-mil').innerHTML =
     mils.map(([v,t])=>`<div class="chip ${state.mil===v?'on':''}" data-k="mil" data-v="${v}">${t}</div>`).join('');
-  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
-    state[c.dataset.k]= c.dataset.v==='all'||isNaN(+c.dataset.v) ? c.dataset.v : +c.dataset.v;
-    renderChips(); renderList();
+  document.querySelectorAll('#f-year .chip, #f-mil .chip').forEach(c=>c.onclick=()=>{
+    state[c.dataset.k]= c.dataset.v==='all' ? 'all' : (isNaN(+c.dataset.v) ? c.dataset.v : +c.dataset.v);
+    renderAll();
   });
+  modelChips(document.getElementById('f-model'));
+  modelChips(document.getElementById('f-model2'));
+  modelChips(document.getElementById('f-model3'));
 }
 
 function renderKpi(rows){
@@ -167,7 +204,7 @@ function renderKpi(rows){
   const items = [
     ['объявлений', rows.length],
     ['медиана', kmoney(med(p))],
-    ['средняя', p.length?kmoney(Math.round(p.reduce((a,b)=>a+b,0)/p.length)):'—'],
+    ['средняя', p.length?kmoney(mean(p)):'—'],
     ['минимум', kmoney(p.length?Math.min(...p):null)],
     ['максимум', kmoney(p.length?Math.max(...p):null)],
     ['оценка авто.ру', els.length?range(med(els), med(ehs)):'—'],
@@ -186,7 +223,7 @@ function renderList(){
     return `<div class="item">
       <a href="${r.url}" target="_blank" rel="noopener">
         <div class="top"><div class="price">${money(r.price)}</div>
-          <div class="title">${r.year} · ${r.vol} л · ${r.hp} л.с.</div></div>
+          <div class="title">${r.model}<br>${r.year} · ${r.vol} л · ${r.hp} л.с.</div></div>
         <div class="meta"><span>${r.mileage.toLocaleString('ru-RU')} км</span><span>${r.trans}</span>
           <span>${(r.city||'').split(',')[0]}</span><span>${r.source}</span></div>
         <div class="est"><span>оценка: <b>${r.est_lo?range(r.est_lo, r.est_hi):'—'}</b></span>
@@ -196,37 +233,118 @@ function renderList(){
 }
 
 function renderSum(){
+  const base = byModel();
   const g = {};
-  DATA.forEach(r=>{ const key=r.year+'|'+r.vol+'|'+r.hp; (g[key]=g[key]||[]).push(r); });
-  const blocks = Object.entries(g).sort((a,b)=>a[0]<b[0]?-1:1).map(([key,arr])=>{
-    const p = arr.map(r=>r.price).sort((a,b)=>a-b);
-    const q = t => p[Math.min(p.length-1, Math.floor((p.length-1)*t))];
+  base.forEach(r=>{
+    const key = state.model==='all' ? r.model : r.year+' · '+r.vol+' л / '+r.hp+' л.с.';
+    (g[key]=g[key]||[]).push(r);
+  });
+  const keys = Object.keys(g).sort((a,b)=>{
+    if(state.model==='all') return MODELS.indexOf(a)-MODELS.indexOf(b);
+    return a<b?-1:1;
+  });
+  document.getElementById('sum').innerHTML = keys.map(key=>{
+    const arr = g[key], p = arr.map(r=>r.price);
     const lo = med(arr.map(r=>r.est_lo).filter(Boolean));
     const hi = med(arr.map(r=>r.est_hi).filter(Boolean));
-    const [y,v,h] = key.split('|');
     return `<div class="srow">
-      <div class="stop"><b>${y}</b> · ${v} л / ${h} л.с.<span class="sn">${arr.length} объявл.</span></div>
-      <div class="sline">медиана <b>${kmoney(med(p))}</b> · P25–P75 ${kmoney(q(.25))}–${kmoney(q(.75))}</div>
-      <div class="sline dim">оценка авто.ру ${range(lo,hi)}</div>
+      <div class="stop"><b>${key}</b><span class="sn">${arr.length} объявл.</span></div>
+      <div class="sline">медиана <b>${kmoney(med(p))}</b> · P25–P75 ${kmoney(quant(p,.25))}–${kmoney(quant(p,.75))}</div>
+      <div class="sline dim">мин ${kmoney(Math.min(...p))} · макс ${kmoney(Math.max(...p))} · оценка ${range(lo,hi)}</div>
     </div>`;
   }).join('');
-  document.getElementById('sum').innerHTML = blocks;
 }
+
+/* ---------- свечи ---------- */
+function chartGroups(){
+  const base = byModel();
+  const g = {};
+  base.forEach(r=>{
+    const key = state.model==='all' ? r.model : r.year+' · '+r.vol+'/'+r.hp;
+    (g[key]=g[key]||[]).push(r);
+  });
+  const keys = Object.keys(g).sort((a,b)=>{
+    if(state.model==='all') return MODELS.indexOf(a)-MODELS.indexOf(b);
+    return a<b?-1:1;
+  });
+  return keys.map(k=>{
+    const arr = g[k], p = arr.map(r=>r.price);
+    return {
+      label: state.model==='all' ? (SHORT[k]||k) : k,
+      n: arr.length,
+      min: Math.min(...p), max: Math.max(...p),
+      median: med(p), mean: mean(p),
+      estLo: med(arr.map(r=>r.est_lo).filter(Boolean)),
+      estHi: med(arr.map(r=>r.est_hi).filter(Boolean)),
+    };
+  }).filter(x=>x.n>0);
+}
+
+function renderChart(){
+  const groups = chartGroups();
+  const host = document.getElementById('chart');
+  if(!groups.length){ host.innerHTML = '<div class="note">Нет данных.</div>'; return; }
+  const W = Math.max(320, host.clientWidth || 360);
+  const padL = 10, padR = 16, rowH = 64, topH = 24;
+  const H = topH + groups.length * rowH + 20;
+  const vals = groups.flatMap(g=>[g.min,g.max,g.estLo,g.estHi].filter(v=>v!=null));
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const span = hi - lo || 1;
+  lo = Math.max(0, lo - span*0.10); hi = hi + span*0.10;
+  const x = v => padL + (v - lo) / (hi - lo) * (W - padL - padR);
+
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" xmlns="http://www.w3.org/2000/svg">`;
+  const ticks = 4;
+  for(let i=0;i<=ticks;i++){
+    const v = lo + (hi-lo)*i/ticks, xx = x(v);
+    const anch = i===0 ? 'start' : (i===ticks ? 'end' : 'middle');
+    s += `<line x1="${xx}" y1="${topH-4}" x2="${xx}" y2="${H-16}" stroke="#242a35" stroke-width="1"/>`;
+    s += `<text x="${xx}" y="${H-4}" fill="#8b93a3" font-size="9.5" text-anchor="${anch}">${short(v)}</text>`;
+  }
+  s += `<text x="${padL}" y="12" fill="#8b93a3" font-size="9.5">цена, ₽</text>`;
+
+  groups.forEach((g,i)=>{
+    const cy = topH + i*rowH + 30;
+    const y1 = cy - 9, y2 = cy + 9;
+    s += `<line x1="${x(g.min)}" y1="${cy}" x2="${x(g.max)}" y2="${cy}" stroke="#5c6474" stroke-width="1.5"/>`;
+    s += `<line x1="${x(g.min)}" y1="${cy-6}" x2="${x(g.min)}" y2="${cy+6}" stroke="#5c6474" stroke-width="1.5"/>`;
+    s += `<line x1="${x(g.max)}" y1="${cy-6}" x2="${x(g.max)}" y2="${cy+6}" stroke="#5c6474" stroke-width="1.5"/>`;
+    if(g.estLo!=null && g.estHi!=null){
+      const bx = x(g.estLo), bw = Math.max(2, x(g.estHi)-x(g.estLo));
+      s += `<rect x="${bx}" y="${y1}" width="${bw}" height="${y2-y1}" rx="2.5" fill="#4f8cff" fill-opacity="0.35" stroke="#4f8cff" stroke-width="1.2"/>`;
+    }
+    if(g.median!=null) s += `<circle cx="${x(g.median)}" cy="${cy}" r="3.8" fill="#ffffff"/>`;
+    if(g.mean!=null) s += `<path d="M${x(g.mean)-4.5} ${cy+14} L${x(g.mean)+4.5} ${cy+14} L${x(g.mean)} ${cy+5} Z" fill="#ffb02e"/>`;
+    s += `<text x="${padL}" y="${cy-14}" fill="#e9ecf1" font-size="11.5" font-weight="600">${g.label}</text>`;
+    const tail = `n=${g.n} · мед ${short(g.median)} · ср ${short(g.mean)}`;
+    s += `<text x="${W-padR}" y="${cy-14}" fill="#8b93a3" font-size="10" text-anchor="end">${tail}</text>`;
+  });
+  s += `</svg>`;
+  host.innerHTML = s;
+  document.getElementById('ctip').textContent =
+    state.model==='all'
+      ? 'Одна свеча на модель: усы — мин/макс цен в объявлениях, бокс — оценочный диапазон авто.ру, ● медиана, ▲ средняя. Выбери модель, чтобы увидеть разбивку по годам и двигателям.'
+      : 'Одна свеча на год и двигатель: усы — мин/макс цен, бокс — оценочный диапазон авто.ру, ● медиана, ▲ средняя.';
+}
+
+function renderAll(){ renderChips(); renderList(); renderSum(); renderChart(); }
 
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on', x===t));
-  ['list','sum','how'].forEach(id=>document.getElementById('tab-'+id)
+  ['list','chart','sum','how'].forEach(id=>document.getElementById('tab-'+id)
     .classList.toggle('hidden', id!==t.dataset.tab));
+  if(t.dataset.tab==='chart') renderChart();
 });
 document.getElementById('f-sort').onchange = e => { state.sort = e.target.value; renderList(); };
+window.addEventListener('resize', ()=>{ if(!document.getElementById('tab-chart').classList.contains('hidden')) renderChart(); });
 
 document.getElementById('sub').textContent =
-  `${META.region} · ${META.updated} · ${DATA.length} объявлений · источники: ${META.sources.join(', ')}`;
+  `${META.region} · ${META.updated} · ${DATA.length} объявлений · ${MODELS.length} модели · ${META.sources.join(', ')}`;
 document.getElementById('srcs').textContent = META.sources.join(', ');
 document.getElementById('upd').textContent = META.updated;
 document.getElementById('how').innerHTML = META.how;
 
-renderChips(); renderList(); renderSum();
+renderAll();
 </script>
 </body>
 </html>
