@@ -189,7 +189,7 @@ function renderList(){
           <div class="title">${r.year} · ${r.vol} л · ${r.hp} л.с.</div></div>
         <div class="meta"><span>${r.mileage.toLocaleString('ru-RU')} км</span><span>${r.trans}</span>
           <span>${(r.city||'').split(',')[0]}</span><span>${r.source}</span></div>
-        <div class="est"><span>оценка: <b>${r.est_lo?k(r.est_lo)+'–'+k(r.est_hi):'—'}</b></span>
+        <div class="est"><span>оценка: <b>${r.est_lo?range(r.est_lo, r.est_hi):'—'}</b></span>
           <span class="badge ${cls}">${dtxt}</span></div>
       </a></div>`;
   }).join('') || '<div class="note">Под фильтр ничего не попало.</div>';
