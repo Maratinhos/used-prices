@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f8cff'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BD%3C/text%3E%3C/svg%3E">
+<title>Цены на б/у — Kia Rio IV седан АКПП</title>
+<style>
+:root{
+  --bg:#0f1115; --card:#171a21; --card2:#1e222b; --line:#2a2f3a;
+  --fg:#e9ecf1; --muted:#8b93a3; --accent:#4f8cff; --good:#38d39f; --warn:#ffb02e; --bad:#ff5c5c;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+  font-size:14px;line-height:1.35}
+body{padding-bottom:24px}
+header{position:sticky;top:0;z-index:20;background:rgba(15,17,21,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);padding:10px 12px 8px}
+h1{font-size:15px;margin:0 0 2px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:11.5px}
+.tabs{display:flex;gap:6px;margin-top:9px}
+.tab{flex:1;text-align:center;padding:7px 0;border-radius:9px;background:var(--card);
+  color:var(--muted);font-size:12.5px;border:1px solid var(--line)}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.filters{padding:10px 12px 4px;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;padding:6px 11px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--muted);font-size:12.5px;white-space:nowrap}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+select{width:100%;background:var(--card);color:var(--fg);border:1px solid var(--line);
+  border-radius:10px;padding:9px 10px;font-size:13px;appearance:none}
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:4px 12px 10px}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:8px 9px;min-width:0}
+.kpi .l{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .v{font-size:14.5px;font-weight:650;margin-top:2px;white-space:nowrap;letter-spacing:-.01em}
+.list{padding:0 12px;display:flex;flex-direction:column;gap:8px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 12px}
+.item a{color:inherit;text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.price{font-size:16.5px;font-weight:700;letter-spacing:-.02em}
+.title{font-size:12.5px;color:var(--muted)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:5px;color:var(--muted);font-size:12px}
+.est{margin-top:7px;display:flex;justify-content:space-between;align-items:center;gap:8px;
+  border-top:1px dashed var(--line);padding-top:7px;font-size:12px}
+.badge{padding:2px 7px;border-radius:6px;font-size:11px;font-weight:600}
+.b-good{background:rgba(56,211,159,.14);color:var(--good)}
+.b-warn{background:rgba(255,176,46,.14);color:var(--warn)}
+.b-bad{background:rgba(255,92,92,.14);color:var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:0 0 12px}
+th,td{padding:6px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-weight:600;font-size:11px;text-transform:uppercase}
+.srow{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.stop{font-size:13px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.sn{color:var(--muted);font-size:11.5px;white-space:nowrap}
+.sline{font-size:12.5px;margin-top:4px}
+.sline.dim{color:var(--muted);margin-top:2px}
+.wrap{padding:10px 12px}
+.note{color:var(--muted);font-size:12px;padding:0 12px 12px}
+.hidden{display:none}
+.foot{color:var(--muted);font-size:11px;padding:14px 12px 0;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="h1">Kia Rio IV · седан · АКПП</h1>
+  <div class="sub" id="sub"></div>
+  <div class="tabs">
+    <div class="tab on" data-tab="list">Объявления</div>
+    <div class="tab" data-tab="sum">Сводка</div>
+    <div class="tab" data-tab="how">Методика</div>
+  </div>
+</header>
+
+<div id="tab-list">
+  <div class="filters">
+    <div class="row" id="f-year"></div>
+    <div class="row" id="f-mil"></div>
+    <select id="f-sort">
+      <option value="price-asc">Цена: по возрастанию</option>
+      <option value="price-desc">Цена: по убыванию</option>
+      <option value="mile-asc">Пробег: по возрастанию</option>
+      <option value="dev-asc">Выгоднее к оценке</option>
+      <option value="year-desc">Год: новые</option>
+    </select>
+  </div>
+  <div class="kpi" id="kpi"></div>
+  <div class="list" id="list"></div>
+</div>
+
+<div id="tab-sum" class="hidden">
+  <div class="wrap" id="sum"></div>
+  <div class="note">Медиана и квартили — по ценам в объявлениях. «Оценка» — медиана диапазонов авто.ру по машинам этой группы.</div>
+</div>
+
+<div id="tab-how" class="hidden">
+  <div class="note" id="how"></div>
+</div>
+
+<div class="foot">данные: <span id="srcs"></span> · обновлено <span id="upd"></span></div>
+
+<script>
+const DATA = __DATA__;
+const META = __META__;
+const money = n => n==null ? '—' : n.toLocaleString('ru-RU').replace(/\u00a0/g,' ') + ' ₽';
+const k = n => n==null ? '—' : Math.round(n/1000) + ' тыс';
+const kmoney = n => n==null ? '—' : (n>=1000000 ? (n/1000000).toFixed(2).replace('.',',')+' млн ₽' : Math.round(n/1000)+' тыс ₽');
+const range = (lo,hi) => {
+  if(lo==null||hi==null) return '—';
+  if(lo>=1000000 && hi>=1000000) return (lo/1e6).toFixed(2).replace('.',',')+'–'+(hi/1e6).toFixed(2).replace('.',',')+' млн ₽';
+  if(hi<1000000) return Math.round(lo/1000)+'–'+Math.round(hi/1000)+' тыс ₽';
+  return kmoney(lo)+'–'+kmoney(hi);
+};
+
+let state = {year:'all', mil:'all', sort:'price-asc', model:'all'};
+
+function dev(r){
+  if(!r.est_lo || !r.est_hi) return null;
+  const mid = (r.est_lo + r.est_hi)/2;
+  return (r.price/mid - 1) * 100;
+}
+function filt(){
+  return DATA.filter(r =>
+    (state.year==='all' || r.year==state.year) &&
+    (state.mil==='all' || (state.mil==='lt75' && r.mileage<75000) ||
+      (state.mil==='75_150' && r.mileage>=75000 && r.mileage<150000) ||
+      (state.mil==='gt150' && r.mileage>=150000))
+  );
+}
+function sortRows(rows){
+  const s = state.sort;
+  const cp = (a,b)=>a.price-b.price;
+  if(s==='price-asc') rows.sort(cp);
+  if(s==='price-desc') rows.sort((a,b)=>b.price-a.price);
+  if(s==='mile-asc') rows.sort((a,b)=>a.mileage-b.mileage);
+  if(s==='year-desc') rows.sort((a,b)=>b.year-a.year || cp(a,b));
+  if(s==='dev-asc') rows.sort((a,b)=>(dev(a)??99)-(dev(b)??99));
+  return rows;
+}
+function med(a){ if(!a.length) return null; const b=[...a].sort((x,y)=>x-y); const m=b.length>>1;
+  return b.length%2 ? b[m] : Math.round((b[m-1]+b[m])/2); }
+
+function renderChips(){
+  const years = [...new Set(DATA.map(r=>r.year))].sort();
+  document.getElementById('f-year').innerHTML =
+    `<div class="chip ${state.year==='all'?'on':''}" data-k="year" data-v="all">Все годы</div>` +
+    years.map(y=>`<div class="chip ${state.year===y?'on':''}" data-k="year" data-v="${y}">${y}</div>`).join('');
+  const mils = [['all','Любой пробег'],['lt75','до 75 тыс'],['75_150','75–150 тыс'],['gt150','150+ тыс']];
+  document.getElementById('f-mil').innerHTML =
+    mils.map(([v,t])=>`<div class="chip ${state.mil===v?'on':''}" data-k="mil" data-v="${v}">${t}</div>`).join('');
+  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    state[c.dataset.k]= c.dataset.v==='all'||isNaN(+c.dataset.v) ? c.dataset.v : +c.dataset.v;
+    renderChips(); renderList();
+  });
+}
+
+function renderKpi(rows){
+  const p = rows.map(r=>r.price);
+  const els = rows.map(r=>r.est_lo).filter(Boolean);
+  const ehs = rows.map(r=>r.est_hi).filter(Boolean);
+  const items = [
+    ['объявлений', rows.length],
+    ['медиана', kmoney(med(p))],
+    ['средняя', p.length?kmoney(Math.round(p.reduce((a,b)=>a+b,0)/p.length)):'—'],
+    ['минимум', kmoney(p.length?Math.min(...p):null)],
+    ['максимум', kmoney(p.length?Math.max(...p):null)],
+    ['оценка авто.ру', els.length?range(med(els), med(ehs)):'—'],
+  ];
+  document.getElementById('kpi').innerHTML = items.map(([l,v])=>
+    `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join('');
+}
+
+function renderList(){
+  const rows = sortRows(filt());
+  renderKpi(rows);
+  document.getElementById('list').innerHTML = rows.map(r=>{
+    const d = dev(r);
+    const cls = d==null?'b-warn':(d<=0?'b-good':(d<=15?'b-warn':'b-bad'));
+    const dtxt = d==null?'нет оценки':(d>0?'+':'')+d.toFixed(0)+'% к оценке';
+    return `<div class="item">
+      <a href="${r.url}" target="_blank" rel="noopener">
+        <div class="top"><div class="price">${money(r.price)}</div>
+          <div class="title">${r.year} · ${r.vol} л · ${r.hp} л.с.</div></div>
+        <div class="meta"><span>${r.mileage.toLocaleString('ru-RU')} км</span><span>${r.trans}</span>
+          <span>${(r.city||'').split(',')[0]}</span><span>${r.source}</span></div>
+        <div class="est"><span>оценка: <b>${r.est_lo?k(r.est_lo)+'–'+k(r.est_hi):'—'}</b></span>
+          <span class="badge ${cls}">${dtxt}</span></div>
+      </a></div>`;
+  }).join('') || '<div class="note">Под фильтр ничего не попало.</div>';
+}
+
+function renderSum(){
+  const g = {};
+  DATA.forEach(r=>{ const key=r.year+'|'+r.vol+'|'+r.hp; (g[key]=g[key]||[]).push(r); });
+  const blocks = Object.entries(g).sort((a,b)=>a[0]<b[0]?-1:1).map(([key,arr])=>{
+    const p = arr.map(r=>r.price).sort((a,b)=>a-b);
+    const q = t => p[Math.min(p.length-1, Math.floor((p.length-1)*t))];
+    const lo = med(arr.map(r=>r.est_lo).filter(Boolean));
+    const hi = med(arr.map(r=>r.est_hi).filter(Boolean));
+    const [y,v,h] = key.split('|');
+    return `<div class="srow">
+      <div class="stop"><b>${y}</b> · ${v} л / ${h} л.с.<span class="sn">${arr.length} объявл.</span></div>
+      <div class="sline">медиана <b>${kmoney(med(p))}</b> · P25–P75 ${kmoney(q(.25))}–${kmoney(q(.75))}</div>
+      <div class="sline dim">оценка авто.ру ${range(lo,hi)}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('sum').innerHTML = blocks;
+}
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on', x===t));
+  ['list','sum','how'].forEach(id=>document.getElementById('tab-'+id)
+    .classList.toggle('hidden', id!==t.dataset.tab));
+});
+document.getElementById('f-sort').onchange = e => { state.sort = e.target.value; renderList(); };
+
+document.getElementById('sub').textContent =
+  `${META.region} · ${META.updated} · ${DATA.length} объявлений · источники: ${META.sources.join(', ')}`;
+document.getElementById('srcs').textContent = META.sources.join(', ');
+document.getElementById('upd').textContent = META.updated;
+document.getElementById('how').innerHTML = META.how;
+
+renderChips(); renderList(); renderSum();
+</script>
+</body>
+</html>

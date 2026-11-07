@@ -1,0 +1,15 @@
+{
+  "name": "Цены на б/у — Kia Rio IV седан АКПП",
+  "short_name": "Цены авто",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1115",
+  "theme_color": "#0f1115",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f8cff'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BD%3C/text%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
