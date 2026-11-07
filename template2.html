@@ -339,7 +339,7 @@ document.getElementById('f-sort').onchange = e => { state.sort = e.target.value;
 window.addEventListener('resize', ()=>{ if(!document.getElementById('tab-chart').classList.contains('hidden')) renderChart(); });
 
 document.getElementById('sub').textContent =
-  `${META.region} · ${META.updated} · ${DATA.length} объявлений · ${MODELS.length} модели · ${META.sources.join(', ')}`;
+  `${META.region} · ${META.updated} · ${DATA.length} объявл. · ${MODELS.length} модели · ${META.sources.join(', ')}`;
 document.getElementById('srcs').textContent = META.sources.join(', ');
 document.getElementById('upd').textContent = META.updated;
 document.getElementById('how').innerHTML = META.how;
