@@ -3,6 +3,306 @@
   {
    "source": "auto.ru",
    "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 228000,
+   "price": 800000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Гастелло",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133121266-6013a4cf/",
+   "est_lo": 791000,
+   "est_hi": 938000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 114626,
+   "price": 840000,
+   "trans": "Автомат",
+   "city": "Краснодар, ул Кореновская, д. 3",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160159162-dbf1fdef/",
+   "est_lo": 899000,
+   "est_hi": 1081000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 215165,
+   "price": 899000,
+   "trans": "Автомат",
+   "city": "Усть-Лабинск, Заполотняная улица, 31",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133510438-71ddd578/",
+   "est_lo": 779000,
+   "est_hi": 961000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 195000,
+   "price": 900000,
+   "trans": "Автомат",
+   "city": "Краснодар, Главная городская пл.",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1121033429-91fe20e1/",
+   "est_lo": 779000,
+   "est_hi": 943000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 160000,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Новая Заря",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133439258-8a02e658/",
+   "est_lo": 911000,
+   "est_hi": 1083000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 268000,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Анапская",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133074259-06cdb7db/",
+   "est_lo": 635000,
+   "est_hi": 822000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 183000,
+   "price": 970000,
+   "trans": "Автомат",
+   "city": "Краснодар, Главная городская площадь",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133354406-009364ba/",
+   "est_lo": 907000,
+   "est_hi": 1078000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 185000,
+   "price": 980000,
+   "trans": "Автомат",
+   "city": "Майкоп",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133573338-5ad3092f/",
+   "est_lo": 779000,
+   "est_hi": 950000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 355000,
+   "price": 1000000,
+   "trans": "Автомат",
+   "city": "Армавир, улица заводская 2/25",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133538539-7f305aad/",
+   "est_lo": 677000,
+   "est_hi": 839000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 212000,
+   "price": 1020000,
+   "trans": "Автомат",
+   "city": "Армавир, улица Гоголя, 178",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1134178406-78293abd/",
+   "est_lo": 775000,
+   "est_hi": 940000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 128000,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Супсех, улица Гагарина, 6/2",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126562532-96a5a822/",
+   "est_lo": 996000,
+   "est_hi": 1143000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 285000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Краснодар, микрорайон Гидростроителей",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1128928847-2a88d4c2/",
+   "est_lo": 672000,
+   "est_hi": 833000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 150000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Сочи, село Высокое",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160410219-967153b1/",
+   "est_lo": 882000,
+   "est_hi": 1053000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 124541,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Сочи",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132597115-21d0cbdf/",
+   "est_lo": 931000,
+   "est_hi": 1102000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 170000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Городской округ Краснодар, Краснодарский край, г.о. Краснодар, пос. Пригородный, ул. Победы, 55",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127276498-611cbd0d/",
+   "est_lo": 760000,
+   "est_hi": 934000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 139000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Туапсе",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1130540829-f0507d9d/",
+   "est_lo": 886000,
+   "est_hi": 1049000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 141100,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Российский, улица имени В.М. Комарова",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160188495-a801a2e0/",
+   "est_lo": 892000,
+   "est_hi": 1033000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 127500,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Краснодар, Зиповская улица, 9",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133943353-99416cc1/",
+   "est_lo": 988000,
+   "est_hi": 1140000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 120000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Краснодар, Городской сквер",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133735712-82008bb9/",
+   "est_lo": 1036000,
+   "est_hi": 1224000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 300000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Сочи",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132335991-c4c5dff4/",
+   "est_lo": 785000,
+   "est_hi": 976000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
    "year": 2017,
    "vol": 1.6,
    "hp": 123,
@@ -12,7 +312,8 @@
    "city": "Мамхег, Советская улица, 48",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131161932-f67960a7/",
    "est_lo": 823000,
-   "est_hi": 969000
+   "est_hi": 969000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -26,7 +327,83 @@
    "city": "Лазаревское",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160531429-e04293a9/",
    "est_lo": 1259000,
-   "est_hi": 1400000
+   "est_hi": 1400000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 174503,
+   "price": 1239000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4/2",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160352754-4de664fb/",
+   "est_lo": 1007000,
+   "est_hi": 1183000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 118000,
+   "price": 1247000,
+   "trans": "Автомат",
+   "city": "Калининская, улица Мира, 153",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160383961-59157dd4/",
+   "est_lo": 1028000,
+   "est_hi": 1191000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 188000,
+   "price": 1250000,
+   "trans": "Автомат",
+   "city": "Новороссийск",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127968517-7d931ec6/",
+   "est_lo": 810000,
+   "est_hi": 993000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 174000,
+   "price": 1250000,
+   "trans": "Автомат",
+   "city": "Новороссийск, улица Луначарского, 20А",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133922626-dcdc00c5/",
+   "est_lo": 990000,
+   "est_hi": 1154000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 165000,
+   "price": 1255000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 6/2",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160195214-03fd67ec/",
+   "est_lo": 1174000,
+   "est_hi": 1343000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -40,7 +417,38 @@
    "city": "Краснодар, Аэропортовская улица, 6/1",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133261555-b0a73e77/",
    "est_lo": 1201000,
-   "est_hi": 1367000
+   "est_hi": 1367000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 171373,
+   "price": 1280000,
+   "trans": "Автомат",
+   "city": "Краснодар, Горячеключевская улица, 5",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160553833-a2ed2913/",
+   "est_lo": 1058000,
+   "est_hi": 1224000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 200000,
+   "price": 1290000,
+   "trans": "Автомат",
+   "city": "Краснодар, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126552784-399641a3/",
+   "est_lo": 704000,
+   "est_hi": 872000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -54,7 +462,8 @@
    "city": "Сочи, улица Ленина, 156",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132630145-f795ca87/",
    "est_lo": 1005000,
-   "est_hi": 1165000
+   "est_hi": 1165000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -68,7 +477,8 @@
    "city": "Краснодар, улица Яна Полуяна, 17",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133187796-9ddd3ded/",
    "est_lo": 989000,
-   "est_hi": 1127000
+   "est_hi": 1127000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -82,7 +492,38 @@
    "city": "Краснодар, Ростовское шоссе, 14/4",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160352089-09902668/",
    "est_lo": 1021000,
-   "est_hi": 1196000
+   "est_hi": 1196000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 146000,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Шевченко, 101",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1128216151-6fae58b1/",
+   "est_lo": 902000,
+   "est_hi": 1065000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 106326,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1128962418-a4056709/",
+   "est_lo": 870000,
+   "est_hi": 1036000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -96,7 +537,53 @@
    "city": "Ейск, Николаевская улица",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1129391000-46bfbb81/",
    "est_lo": 745000,
-   "est_hi": 898000
+   "est_hi": 898000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 204240,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Лазаревское",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1121525623-9211aca0/",
+   "est_lo": 910000,
+   "est_hi": 1079000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 185000,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Геленджик",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131748664-9d74f331/",
+   "est_lo": 765000,
+   "est_hi": 927000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 128500,
+   "price": 1355000,
+   "trans": "Автомат",
+   "city": "Стародеревянковская, станица Каневская",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160675589-c09d77f5/",
+   "est_lo": 1125000,
+   "est_hi": 1294000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -110,7 +597,8 @@
    "city": "Апшеронск",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160013709-3c8ee427/",
    "est_lo": 1103000,
-   "est_hi": 1255000
+   "est_hi": 1255000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -124,7 +612,68 @@
    "city": "Новороссийск, территория Цемдолина, Промышленная улица, 1Г",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160456969-75d4dfb6/",
    "est_lo": 1102000,
-   "est_hi": 1262000
+   "est_hi": 1262000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 82950,
+   "price": 1390000,
+   "trans": "Автомат",
+   "city": "Анастасиевская, Красная улица",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1130492198-a4af437f/",
+   "est_lo": 1235000,
+   "est_hi": 1381000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 157000,
+   "price": 1400000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160042416-a7783b29/",
+   "est_lo": 1121000,
+   "est_hi": 1292000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 49985,
+   "price": 1419000,
+   "trans": "Автомат",
+   "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160007590-04819c77/",
+   "est_lo": 1292000,
+   "est_hi": 1473000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 154000,
+   "price": 1430000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160027195-fa6ba54c/",
+   "est_lo": 1074000,
+   "est_hi": 1238000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -138,7 +687,23 @@
    "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1134247557-bd89560c/",
    "est_lo": 1357000,
-   "est_hi": 1534000
+   "est_hi": 1534000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 180000,
+   "price": 1440000,
+   "trans": "Автомат",
+   "city": "Геленджик, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127295498-4fd9fbbc/",
+   "est_lo": 914000,
+   "est_hi": 1070000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -152,7 +717,8 @@
    "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160067663-29ac917a/",
    "est_lo": 1321000,
-   "est_hi": 1495000
+   "est_hi": 1495000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -166,7 +732,23 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1134005606-972a89cc/",
    "est_lo": 1168000,
-   "est_hi": 1318000
+   "est_hi": 1318000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 152000,
+   "price": 1450000,
+   "trans": "Автомат",
+   "city": "Майкоп, хутор Коминтерн",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1133166414-dff4c97a/",
+   "est_lo": 1200000,
+   "est_hi": 1347000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -180,7 +762,8 @@
    "city": "Керчь",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1114845657-7ffb7697/",
    "est_lo": 1235000,
-   "est_hi": 1383000
+   "est_hi": 1383000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -194,7 +777,8 @@
    "city": "Адыгейск",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131918830-e2a81f6b/",
    "est_lo": 1035000,
-   "est_hi": 1190000
+   "est_hi": 1190000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -208,7 +792,23 @@
    "city": "Краснодар, Горячеключевская улица, 4",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160635943-bc35ab2e/",
    "est_lo": 1316000,
-   "est_hi": 1474000
+   "est_hi": 1474000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 90000,
+   "price": 1500000,
+   "trans": "Автомат",
+   "city": "Крымск, Краснодарский край, Крымский р-н, Крымское городское поселение,",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127295965-8238978a/",
+   "est_lo": 1183000,
+   "est_hi": 1326000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -222,7 +822,68 @@
    "city": "Раевская",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132596425-5bcb383e/",
    "est_lo": 1202000,
-   "est_hi": 1341000
+   "est_hi": 1341000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 65719,
+   "price": 1534000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160578118-500cf7cb/",
+   "est_lo": 1349000,
+   "est_hi": 1563000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 153869,
+   "price": 1540000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4/2",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160647963-16ec418f/",
+   "est_lo": 1175000,
+   "est_hi": 1340000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 180000,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Старовеличковская, Красная улица",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126596413-4cab1033/",
+   "est_lo": 1013000,
+   "est_hi": 1172000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 99868,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1131689078-d3271142/",
+   "est_lo": 1093000,
+   "est_hi": 1261000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -236,7 +897,23 @@
    "city": "Краснодар, микрорайон Восточно-Кругликовский",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132878940-9050d67e/",
    "est_lo": 1139000,
-   "est_hi": 1291000
+   "est_hi": 1291000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 71509,
+   "price": 1597000,
+   "trans": "Автомат",
+   "city": "Краснодар, Прикубанский внутригородской округ, микрорайон имени Петра Метальникова, улица Петра Метальникова, 1Г",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160558627-2e78c985/",
+   "est_lo": 1302000,
+   "est_hi": 1483000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -250,7 +927,23 @@
    "city": "Анапа",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1127974096-147544bd/",
    "est_lo": 1357000,
-   "est_hi": 1503000
+   "est_hi": 1503000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 182000,
+   "price": 1600000,
+   "trans": "Автомат",
+   "city": "Майкоп, Республика Адыгея",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126873165-a72b2baa/",
+   "est_lo": 1008000,
+   "est_hi": 1158000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -264,7 +957,8 @@
    "city": "Яблоновский, Дорожная улица, 1/1",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1120835992-0844d154/",
    "est_lo": 1428000,
-   "est_hi": 1617000
+   "est_hi": 1617000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -278,7 +972,8 @@
    "city": "Сочи",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1122734532-ef49d1dd/",
    "est_lo": 1196000,
-   "est_hi": 1342000
+   "est_hi": 1342000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -292,7 +987,23 @@
    "city": "Краснодар, площадь Флага",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1128633145-50c1d746/",
    "est_lo": 1345000,
-   "est_hi": 1481000
+   "est_hi": 1481000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Hyundai Solaris II",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 102000,
+   "price": 1700000,
+   "trans": "Автомат",
+   "city": "Краснодар, Россия,",
+   "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1123158671-8a2f1259/",
+   "est_lo": 900000,
+   "est_hi": 1098000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -306,7 +1017,8 @@
    "city": "Армавир, улица Ковтюха, No:445",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1132230184-d4a478fe/",
    "est_lo": 1449000,
-   "est_hi": 1592000
+   "est_hi": 1592000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -320,7 +1032,8 @@
    "city": "Сочи, Ворошиловоградская 256",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1122130454-8efa03f4/",
    "est_lo": 1291000,
-   "est_hi": 1447000
+   "est_hi": 1447000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -334,7 +1047,53 @@
    "city": "Тешебс, улица Ленина, 63",
    "url": "https://auto.ru/cars/used/sale/hyundai/solaris/1126539187-59f11a62/",
    "est_lo": 1352000,
-   "est_hi": 1498000
+   "est_hi": 1498000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 165000,
+   "price": 750000,
+   "trans": "Автомат",
+   "city": "Краснодар, проспект Чекистов, 1/3",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160637200-5cd84f1b/",
+   "est_lo": 752000,
+   "est_hi": 933000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 259000,
+   "price": 860000,
+   "trans": "Автомат",
+   "city": "Краснодар, 9-я Тихая улица, 7",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1134141169-082c9d12/",
+   "est_lo": 750000,
+   "est_hi": 914000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2020,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 150000,
+   "price": 860000,
+   "trans": "Автомат",
+   "city": "Анапа",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160606564-96cf7c9e/",
+   "est_lo": 927000,
+   "est_hi": 1090000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -348,7 +1107,8 @@
    "city": "Сочи, площадь Флага",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160678635-ec3d1645/",
    "est_lo": 733000,
-   "est_hi": 900000
+   "est_hi": 900000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -362,7 +1122,53 @@
    "city": "Сочи",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131529900-68fcd826/",
    "est_lo": 839000,
-   "est_hi": 990000
+   "est_hi": 990000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 190000,
+   "price": 999999,
+   "trans": "Автомат",
+   "city": "Адлер, Кирпичная улица, 6/1А",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1133080284-82c2a652/",
+   "est_lo": 814000,
+   "est_hi": 969000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 156551,
+   "price": 1050000,
+   "trans": "Автомат",
+   "city": "Краснодар, Малиновая улица, 409",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1132956554-18686816/",
+   "est_lo": 819000,
+   "est_hi": 970000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 195000,
+   "price": 1060000,
+   "trans": "Автомат",
+   "city": "Майкоп",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1133106463-46faa8b4/",
+   "est_lo": 741000,
+   "est_hi": 917000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -376,7 +1182,53 @@
    "city": "Тихорецк",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1133963636-190f73df/",
    "est_lo": 978000,
-   "est_hi": 1140000
+   "est_hi": 1140000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 160000,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Брюховецкая",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160213566-1f3e25da/",
+   "est_lo": 937000,
+   "est_hi": 1078000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 250000,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Новороссийск, улица Куникова",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1128347945-187f2a84/",
+   "est_lo": 724000,
+   "est_hi": 878000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 153366,
+   "price": 1130000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица имени Дзержинского, 231/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160646412-a29fa711/",
+   "est_lo": 1158000,
+   "est_hi": 1323000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -390,7 +1242,53 @@
    "city": "Анапа",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160489446-81959e91/",
    "est_lo": 889000,
-   "est_hi": 1023000
+   "est_hi": 1023000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 105000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Армавир, Тоннельная улица, 4",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160466995-dd9c922e/",
+   "est_lo": 1062000,
+   "est_hi": 1198000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 115000,
+   "price": 1165000,
+   "trans": "Автомат",
+   "city": "Анапа",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1130400689-1e47569f/",
+   "est_lo": 832000,
+   "est_hi": 1019000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 107401,
+   "price": 1195000,
+   "trans": "Автомат",
+   "city": "Краснодар, Крылатая улица, 12/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1132143060-f18f0e25/",
+   "est_lo": 1150000,
+   "est_hi": 1295000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -404,7 +1302,83 @@
    "city": "Анапа, Астраханская улица, 99",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131040391-0acb92c7/",
    "est_lo": 1180000,
-   "est_hi": 1309000
+   "est_hi": 1309000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 159257,
+   "price": 1210000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица имени Дзержинского, 231/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160360904-25d23b47/",
+   "est_lo": 1125000,
+   "est_hi": 1301000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 80000,
+   "price": 1210000,
+   "trans": "Автомат",
+   "city": "Лабинск, Улица Ростовского д. 1 А",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1121906535-0f33fa87/",
+   "est_lo": 924000,
+   "est_hi": 1078000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 78857,
+   "price": 1249000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1133697437-76b1b91e/",
+   "est_lo": 1404000,
+   "est_hi": 1584000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 213000,
+   "price": 1250000,
+   "trans": "Автомат",
+   "city": "Сочи, Транспортная улица, 76/25",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1130719918-32779b4e/",
+   "est_lo": 884000,
+   "est_hi": 1033000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 191000,
+   "price": 1250000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1134030803-ab70bb35/",
+   "est_lo": 891000,
+   "est_hi": 1046000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -418,7 +1392,83 @@
    "city": "Сочи, микрорайон КСМ, Кипарисовая улица, 16/1",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160510836-71300728/",
    "est_lo": 868000,
-   "est_hi": 1032000
+   "est_hi": 1032000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 184383,
+   "price": 1255000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 6/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1134240425-4ea34cd4/",
+   "est_lo": 1090000,
+   "est_hi": 1251000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 147141,
+   "price": 1272000,
+   "trans": "Автомат",
+   "city": "Новороссийск, территория Цемдолина, Промышленная улица, 1Г",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160625073-f69a1eba/",
+   "est_lo": 1060000,
+   "est_hi": 1229000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 89342,
+   "price": 1280000,
+   "trans": "Автомат",
+   "city": "Краснодар, Горячеключевская улица, 5",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1132409461-f46022c3/",
+   "est_lo": 1263000,
+   "est_hi": 1407000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 178258,
+   "price": 1295000,
+   "trans": "Автомат",
+   "city": "Краснодар, Крылатая улица, 12/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160409949-b5d06454/",
+   "est_lo": 1091000,
+   "est_hi": 1251000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 145000,
+   "price": 1300000,
+   "trans": "Автомат",
+   "city": "Краснодар, жилой комплекс Премьера",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1133712812-822b3454/",
+   "est_lo": 964000,
+   "est_hi": 1121000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -432,7 +1482,8 @@
    "city": "Краснодар, Ростовское шоссе, 14/4",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160603257-87f33c9f/",
    "est_lo": 1294000,
-   "est_hi": 1459000
+   "est_hi": 1459000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -446,7 +1497,23 @@
    "city": "Краснодар, Ростовское шоссе, 22/7",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160515886-dba97980/",
    "est_lo": 1191000,
-   "est_hi": 1350000
+   "est_hi": 1350000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 69437,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Краснодар, Ростовское шоссе ул, дом 7",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160690098-7aba1fbc/",
+   "est_lo": 1290000,
+   "est_hi": 1475000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -460,7 +1527,8 @@
    "city": "Краснодар, посёлок Калинино",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1126990460-7b7b827d/",
    "est_lo": 998000,
-   "est_hi": 1145000
+   "est_hi": 1145000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -474,7 +1542,8 @@
    "city": "Новороссийск",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1132320829-51e3ba6c/",
    "est_lo": 1054000,
-   "est_hi": 1199000
+   "est_hi": 1199000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -488,7 +1557,8 @@
    "city": "Краснодар, Аэропортовская улица, 4",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160658817-4fe630f9/",
    "est_lo": 1310000,
-   "est_hi": 1494000
+   "est_hi": 1494000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -502,7 +1572,23 @@
    "city": "Краснодар, улица имени Дзержинского, 231/2",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160117955-d2fa12b1/",
    "est_lo": 1264000,
-   "est_hi": 1398000
+   "est_hi": 1398000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 87375,
+   "price": 1399000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Ленина, 219/6",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160646825-9cd63b17/",
+   "est_lo": 1286000,
+   "est_hi": 1445000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -516,7 +1602,8 @@
    "city": "Краснодар, жилой район Лазаревское",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1132177007-d957f12f/",
    "est_lo": 1313000,
-   "est_hi": 1465000
+   "est_hi": 1465000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -530,7 +1617,23 @@
    "city": "Сочи, улица 20 Горнострелковой дивизии, 16",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160509312-718cab0d/",
    "est_lo": 1127000,
-   "est_hi": 1283000
+   "est_hi": 1283000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 113000,
+   "price": 1420000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1132608781-a2c9eb42/",
+   "est_lo": 1081000,
+   "est_hi": 1221000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -544,7 +1647,8 @@
    "city": "Краснодар, Аэропортовская улица, 4",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1133911787-d9b51a16/",
    "est_lo": 1365000,
-   "est_hi": 1534000
+   "est_hi": 1534000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -558,7 +1662,53 @@
    "city": "Краснодар, Горячеключевская улица, 5",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160568937-b0813d79/",
    "est_lo": 1305000,
-   "est_hi": 1447000
+   "est_hi": 1447000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 154038,
+   "price": 1440000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160010610-dab02f71/",
+   "est_lo": 1205000,
+   "est_hi": 1356000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 250000,
+   "price": 1450000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1126849298-107f5efe/",
+   "est_lo": 909000,
+   "est_hi": 1087000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 102000,
+   "price": 1450000,
+   "trans": "Автомат",
+   "city": "Новороссийск",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1134239111-afdcf96c/",
+   "est_lo": 1151000,
+   "est_hi": 1290000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -572,7 +1722,8 @@
    "city": "Сочи, улица Новая Заря, 7",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1133573795-d156524c/",
    "est_lo": 1424000,
-   "est_hi": 1571000
+   "est_hi": 1571000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -586,7 +1737,23 @@
    "city": "Курганинск, Курганинское городское поселение",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160098973-762b5131/",
    "est_lo": 1204000,
-   "est_hi": 1364000
+   "est_hi": 1364000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 53970,
+   "price": 1467000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 4",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160548761-7e7493f9/",
+   "est_lo": 1320000,
+   "est_hi": 1525000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -600,7 +1767,8 @@
    "city": "Краснодар, Горячеключевская улица, 5",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1134083843-8e085fac/",
    "est_lo": 1198000,
-   "est_hi": 1332000
+   "est_hi": 1332000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -614,7 +1782,98 @@
    "city": "Краснодар, Конгрессная улица, 31",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160449182-e9c06845/",
    "est_lo": 1146000,
-   "est_hi": 1293000
+   "est_hi": 1293000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 180000,
+   "price": 1500000,
+   "trans": "Автомат",
+   "city": "Витязево",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1132372305-66152000/",
+   "est_lo": 1089000,
+   "est_hi": 1244000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 108228,
+   "price": 1510000,
+   "trans": "Автомат",
+   "city": "Краснодар, Старокубанская улица, 122/1",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1133260367-5d747ac4/",
+   "est_lo": 1373000,
+   "est_hi": 1525000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 75100,
+   "price": 1520000,
+   "trans": "Автомат",
+   "city": "Темрюк, Краснодарский край, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1115236968-dc5f1b72/",
+   "est_lo": 1155000,
+   "est_hi": 1309000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 159001,
+   "price": 1520000,
+   "trans": "Автомат",
+   "city": "Весёлое, Петропавловская улица, 2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1130566731-3c4c1014/",
+   "est_lo": 1102000,
+   "est_hi": 1242000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.4,
+   "hp": 100,
+   "mileage": 117000,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Сочи, Донская улица, 1-й километр",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1127172880-13f9d561/",
+   "est_lo": 857000,
+   "est_hi": 1020000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 97535,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Супсех, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1127491361-6ec5324a/",
+   "est_lo": 1104000,
+   "est_hi": 1239000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -628,7 +1887,53 @@
    "city": "Геленджик",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131751087-42dd230c/",
    "est_lo": 1145000,
-   "est_hi": 1283000
+   "est_hi": 1283000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 152930,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Хадыженск, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1126617092-5df67538/",
+   "est_lo": 989000,
+   "est_hi": 1142000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 69600,
+   "price": 1550000,
+   "trans": "Автомат",
+   "city": "Новомихайловский, Колхозная ул., 55",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1127768447-20c50e27/",
+   "est_lo": 1115000,
+   "est_hi": 1271000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 80947,
+   "price": 1559000,
+   "trans": "Автомат",
+   "city": "Краснодар, Ростовское шоссе, 22/7",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160467722-f905a0d7/",
+   "est_lo": 1314000,
+   "est_hi": 1473000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -642,7 +1947,23 @@
    "city": "Краснодар, Старокубанская улица, 122/1",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1133325233-176932db/",
    "est_lo": 1262000,
-   "est_hi": 1407000
+   "est_hi": 1407000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 52706,
+   "price": 1595000,
+   "trans": "Автомат",
+   "city": "Краснодар, Аэропортовская улица, 6/2",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1160646011-7e9a9d0c/",
+   "est_lo": 1410000,
+   "est_hi": 1596000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -656,7 +1977,23 @@
    "city": "Тимашевск, Интернациональная улица",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1134049399-90a36adc/",
    "est_lo": 1241000,
-   "est_hi": 1388000
+   "est_hi": 1388000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 102500,
+   "price": 1649000,
+   "trans": "Автомат",
+   "city": "Городской округ Краснодар, Кленовая улица, 414/1",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1126137900-4a45da9c/",
+   "est_lo": 1135000,
+   "est_hi": 1272000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -670,7 +2007,8 @@
    "city": "Краснодар, станица Новотитаровская",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131833453-ca655bf9/",
    "est_lo": 1268000,
-   "est_hi": 1426000
+   "est_hi": 1426000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -684,7 +2022,8 @@
    "city": "Сочи, улица Славы, 24",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1127869650-a8c5fb7b/",
    "est_lo": 1329000,
-   "est_hi": 1471000
+   "est_hi": 1471000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -698,7 +2037,8 @@
    "city": "Кореновск, улица Венеры Павленко, 33",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160604881-a7afc2d1/",
    "est_lo": 1307000,
-   "est_hi": 1445000
+   "est_hi": 1445000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -712,7 +2052,8 @@
    "city": "Краснодар, Питерская улица, 40",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1127442194-3bc597fb/",
    "est_lo": 1342000,
-   "est_hi": 1503000
+   "est_hi": 1503000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -726,7 +2067,8 @@
    "city": "Краснодар, Восточно-Кругликовская улица, 82",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131471621-66cf8bba/",
    "est_lo": 1283000,
-   "est_hi": 1431000
+   "est_hi": 1431000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -740,7 +2082,23 @@
    "city": "Краснодар, улица Григория Булгакова, 10, подъезд 1",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1131774837-a7f9cab0/",
    "est_lo": 1340000,
-   "est_hi": 1501000
+   "est_hi": 1501000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Kia Rio IV",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 33265,
+   "price": 1850000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Хакурате, 12",
+   "url": "https://auto.ru/cars/used/sale/kia/rio/1123676092-a32c3d83/",
+   "est_lo": 1360000,
+   "est_hi": 1519000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -754,7 +2112,203 @@
    "city": "Краснодар, Ростовское шоссе, 22/7",
    "url": "https://auto.ru/cars/used/sale/kia/rio/1160355826-cc5b8599/",
    "est_lo": 1493000,
-   "est_hi": 1690000
+   "est_hi": 1690000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 288000,
+   "price": 450000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Яна Фабрициуса, 12к1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131587552-d1faf662/",
+   "est_lo": 562000,
+   "est_hi": 734000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 240000,
+   "price": 460000,
+   "trans": "Автомат",
+   "city": "Ладожская, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1125329692-503d5763/",
+   "est_lo": 604000,
+   "est_hi": 791000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 360000,
+   "price": 550000,
+   "trans": "Автомат",
+   "city": "Ладожская, Мельничная улица, 23",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131569203-bb61c8f4/",
+   "est_lo": 414000,
+   "est_hi": 602000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 340000,
+   "price": 550000,
+   "trans": "Автомат",
+   "city": "Краснодар, Станочная улица, 2",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131681830-74343451/",
+   "est_lo": 463000,
+   "est_hi": 650000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 427000,
+   "price": 600000,
+   "trans": "Автомат",
+   "city": "Сочи, Цветной бульвар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1128282830-3a06f62f/",
+   "est_lo": 414000,
+   "est_hi": 591000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 350000,
+   "price": 650000,
+   "trans": "Автомат",
+   "city": "Краснодар, Новороссийская улица, 5/1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129696152-a2ac8840/",
+   "est_lo": 460000,
+   "est_hi": 651000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 262000,
+   "price": 699999,
+   "trans": "Автомат",
+   "city": "Краснодар, Степная улица, 105",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131952950-fb00795f/",
+   "est_lo": 540000,
+   "est_hi": 722000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 232000,
+   "price": 750000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Героев-Разведчиков",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1134209188-8e0c9526/",
+   "est_lo": 624000,
+   "est_hi": 808000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 90000,
+   "price": 800000,
+   "trans": "Автомат",
+   "city": "Тамань, Анапа",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130553187-abfc0c32/",
+   "est_lo": 920000,
+   "est_hi": 1091000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 265000,
+   "price": 810000,
+   "trans": "Автомат",
+   "city": "Сочи",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132535089-232e4c47/",
+   "est_lo": 564000,
+   "est_hi": 729000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 105,
+   "mileage": 158507,
+   "price": 817000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица имени Дзержинского, 231/2",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160360900-481eaf72/",
+   "est_lo": 886000,
+   "est_hi": 1049000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 105,
+   "mileage": 242000,
+   "price": 820000,
+   "trans": "Автомат",
+   "city": "Кропоткин",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1123948345-b3abec8c/",
+   "est_lo": 633000,
+   "est_hi": 795000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 188981,
+   "price": 835000,
+   "trans": "Автомат",
+   "city": "Краснодар, Ростовское шоссе ул, дом 7",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160690868-57d0d733/",
+   "est_lo": 895000,
+   "est_hi": 1087000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -768,7 +2322,98 @@
    "city": "Благовещенская, Таманская улица, 65",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132819362-a65461b0/",
    "est_lo": 1004000,
-   "est_hi": 1146000
+   "est_hi": 1146000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 230000,
+   "price": 850000,
+   "trans": "Автомат",
+   "city": "Смоленская, улица Чапаева, 23Б",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131713250-6d62bd69/",
+   "est_lo": 587000,
+   "est_hi": 752000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 200000,
+   "price": 890000,
+   "trans": "Автомат",
+   "city": "Сочи, Кипарисовая улица, 18/2",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132821804-2119013f/",
+   "est_lo": 619000,
+   "est_hi": 814000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 230000,
+   "price": 890000,
+   "trans": "Автомат",
+   "city": "Геленджик",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132594986-299e0e9d/",
+   "est_lo": 642000,
+   "est_hi": 811000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 114457,
+   "price": 900000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Героев-Разведчиков, 8с1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1128099282-069842bb/",
+   "est_lo": 929000,
+   "est_hi": 1104000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 276600,
+   "price": 900000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160457992-13d3c5f3/",
+   "est_lo": 665000,
+   "est_hi": 832000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 148579,
+   "price": 930000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133665351-fae32229/",
+   "est_lo": 1007000,
+   "est_hi": 1177000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -782,7 +2427,98 @@
    "city": "Краснодар, улица Братьев Черников, 49",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131534459-49517373/",
    "est_lo": 798000,
-   "est_hi": 955000
+   "est_hi": 955000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 169500,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Сочи, Высокогорная улица, 47/2",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160111694-935209f2/",
+   "est_lo": 854000,
+   "est_hi": 1006000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 105,
+   "mileage": 250000,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Анапа, Крымская улица",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129136178-fac71db1/",
+   "est_lo": 685000,
+   "est_hi": 837000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 105164,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Сочи, Пластунская улица, 163А",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1134125107-704c6019/",
+   "est_lo": 742000,
+   "est_hi": 915000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 245200,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Адлер, Триумфальный проезд, 3",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1134131231-63ec56c5/",
+   "est_lo": 781000,
+   "est_hi": 945000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 196000,
+   "price": 950000,
+   "trans": "Автомат",
+   "city": "Армавир, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1126473007-ca258450/",
+   "est_lo": 744000,
+   "est_hi": 919000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 105,
+   "mileage": 184000,
+   "price": 955000,
+   "trans": "Автомат",
+   "city": "Кропоткин",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160332783-cec351f0/",
+   "est_lo": 794000,
+   "est_hi": 949000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -796,7 +2532,203 @@
    "city": "Керчь, улица Блюхера, 23",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130055417-9ca25d07/",
    "est_lo": 839000,
-   "est_hi": 1017000
+   "est_hi": 1017000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 250000,
+   "price": 990000,
+   "trans": "Автомат",
+   "city": "Анапа, улица Генерала Самарина, 26",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133410650-09a1a097/",
+   "est_lo": 671000,
+   "est_hi": 874000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 230000,
+   "price": 990000,
+   "trans": "Автомат",
+   "city": "Анапа, ЖК Времена Года",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160518847-3974a0bc/",
+   "est_lo": 722000,
+   "est_hi": 885000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2020,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 122000,
+   "price": 1000000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1126401130-7e63aad3/",
+   "est_lo": 986000,
+   "est_hi": 1191000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 350000,
+   "price": 1000000,
+   "trans": "Автомат",
+   "city": "Краснодар, Карасунский внутригородской округ",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133874369-c81d66a1/",
+   "est_lo": 527000,
+   "est_hi": 701000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 166000,
+   "price": 1000000,
+   "trans": "Автомат",
+   "city": "Краснодар, жилой комплекс Дом Романовых",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1128419053-9bb1e054/",
+   "est_lo": 684000,
+   "est_hi": 870000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 144000,
+   "price": 1000000,
+   "trans": "Автомат",
+   "city": "Яблоновский, Туапсинская улица",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1125447141-29a3557c/",
+   "est_lo": 777000,
+   "est_hi": 966000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 192000,
+   "price": 1015000,
+   "trans": "Автомат",
+   "city": "Краснодар, Уральская улица, 166/2",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160581584-f02c977b/",
+   "est_lo": 832000,
+   "est_hi": 1007000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 170000,
+   "price": 1050000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица имени Игнатова, 4/1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133278317-460689e4/",
+   "est_lo": 629000,
+   "est_hi": 790000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 186000,
+   "price": 1050000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Гастелло, 27к3",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133141362-b7f7247e/",
+   "est_lo": 905000,
+   "est_hi": 1055000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 202000,
+   "price": 1050000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133759117-2d679099/",
+   "est_lo": 731000,
+   "est_hi": 903000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 163886,
+   "price": 1050000,
+   "trans": "Автомат",
+   "city": "Геленджик",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129083465-9f4268e3/",
+   "est_lo": 772000,
+   "est_hi": 940000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 202000,
+   "price": 1070000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1125222354-e1c00df4/",
+   "est_lo": 737000,
+   "est_hi": 897000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 143742,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Краснодар, микрорайон Центральный",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133815077-8a7c9b2b/",
+   "est_lo": 792000,
+   "est_hi": 971000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -810,7 +2742,38 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1125749512-55ee4586/",
    "est_lo": 938000,
-   "est_hi": 1094000
+   "est_hi": 1094000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 169000,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Краснодар, Ростовское шоссе ул, дом 7",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160112794-f5868696/",
+   "est_lo": 847000,
+   "est_hi": 1020000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 180000,
+   "price": 1100000,
+   "trans": "Автомат",
+   "city": "Краснодар, Шоссейная улица, 65",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131528229-2861dc50/",
+   "est_lo": 851000,
+   "est_hi": 1023000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -824,7 +2787,8 @@
    "city": "Краснодар, Ростовское шоссе, 22/7",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160494195-94ba2683/",
    "est_lo": 1029000,
-   "est_hi": 1215000
+   "est_hi": 1215000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -838,7 +2802,38 @@
    "city": "Геленджик",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1121019447-45689094/",
    "est_lo": 941000,
-   "est_hi": 1125000
+   "est_hi": 1125000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 105000,
+   "price": 1149000,
+   "trans": "Автомат",
+   "city": "Усть-Лабинск, Заполотняная улица, 31",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133510467-13d5ac6b/",
+   "est_lo": 1053000,
+   "est_hi": 1246000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 110000,
+   "price": 1150000,
+   "trans": "Автомат",
+   "city": "Краснодар, Артезианская улица, 16",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133404079-00697fa9/",
+   "est_lo": 793000,
+   "est_hi": 1004000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -852,7 +2847,8 @@
    "city": "Краснодар, улица Александра Покрышкина, 13",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160650847-8d775033/",
    "est_lo": 1066000,
-   "est_hi": 1225000
+   "est_hi": 1225000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -866,7 +2862,38 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129304959-69eb9b01/",
    "est_lo": 1015000,
-   "est_hi": 1168000
+   "est_hi": 1168000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 139333,
+   "price": 1187000,
+   "trans": "Автомат",
+   "city": "Новороссийск, территория Цемдолина, Промышленная улица, 1Г",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160414431-136d71c7/",
+   "est_lo": 1118000,
+   "est_hi": 1287000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 135260,
+   "price": 1190000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Александра Покрышкина, 13",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160389976-01d3ace7/",
+   "est_lo": 964000,
+   "est_hi": 1129000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -880,7 +2907,113 @@
    "city": "Армавир",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160191266-d4749c26/",
    "est_lo": 862000,
-   "est_hi": 1025000
+   "est_hi": 1025000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 144000,
+   "price": 1190000,
+   "trans": "Автомат",
+   "city": "Новая Адыгея",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131798942-2d633c6d/",
+   "est_lo": 875000,
+   "est_hi": 1049000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 180000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Краснодар, Уральская улица, 200",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133908229-ca24dd7c/",
+   "est_lo": 814000,
+   "est_hi": 978000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 140000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Кущёвская",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132612161-f8e903d6/",
+   "est_lo": 900000,
+   "est_hi": 1056000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 137000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Сочи, Триумфальная улица",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130483593-a893d52d/",
+   "est_lo": 910000,
+   "est_hi": 1073000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 330000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Сочи, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1127058207-f42daaba/",
+   "est_lo": 1275000,
+   "est_hi": 1334000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 200000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Туапсе, Краснодарский край",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1124517752-5acf1bc1/",
+   "est_lo": 909000,
+   "est_hi": 1075000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 200000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130293230-7a18b705/",
+   "est_lo": 801000,
+   "est_hi": 967000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -894,7 +3027,23 @@
    "city": "Сочи",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130929115-cfd38ac6/",
    "est_lo": 1000000,
-   "est_hi": 1158000
+   "est_hi": 1158000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 190000,
+   "price": 1200000,
+   "trans": "Автомат",
+   "city": "Новомихайловский, 2-й микрорайон, 5",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1129188204-fcdf3703/",
+   "est_lo": 869000,
+   "est_hi": 1046000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -908,7 +3057,53 @@
    "city": "Новая Адыгея, улица Тургеневское шоссе, 12В/1",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160517568-fb5ed0c9/",
    "est_lo": 1066000,
-   "est_hi": 1233000
+   "est_hi": 1233000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 193000,
+   "price": 1230000,
+   "trans": "Автомат",
+   "city": "Краснодар, проспект имени писателя Знаменского, 5",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160316474-7c529eb2/",
+   "est_lo": 754000,
+   "est_hi": 916000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 117500,
+   "price": 1250000,
+   "trans": "Автомат",
+   "city": "Сочи, улица Яна Фабрициуса, 56/1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160446206-c92f311e/",
+   "est_lo": 1069000,
+   "est_hi": 1257000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 88923,
+   "price": 1280000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1123615611-d4cd96c2/",
+   "est_lo": 967000,
+   "est_hi": 1160000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -922,7 +3117,8 @@
    "city": "Краснодар, Горячеключевская улица, 5",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160608306-5e2deee8/",
    "est_lo": 1145000,
-   "est_hi": 1334000
+   "est_hi": 1334000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -936,7 +3132,68 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160555931-bf4be6e5/",
    "est_lo": 1044000,
-   "est_hi": 1202000
+   "est_hi": 1202000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 82500,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Новороссийск",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133123804-f6a1481d/",
+   "est_lo": 973000,
+   "est_hi": 1147000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 140000,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Армавир",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1102857495-dbd7a62f/",
+   "est_lo": 957000,
+   "est_hi": 1127000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2017,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 168000,
+   "price": 1350000,
+   "trans": "Автомат",
+   "city": "Геленджик",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130214953-1d3cc794/",
+   "est_lo": 904000,
+   "est_hi": 1062000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2016,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 150000,
+   "price": 1375000,
+   "trans": "Автомат",
+   "city": "Адыгейск",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1130151723-efd079b7/",
+   "est_lo": 962000,
+   "est_hi": 1121000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -950,7 +3207,8 @@
    "city": "Краснодар, Прикубанский внутригородской округ, микрорайон имени Петра Метальникова, улица Петра Метальникова, 1Г",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160354135-5c8b06cb/",
    "est_lo": 1146000,
-   "est_hi": 1318000
+   "est_hi": 1318000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -964,7 +3222,23 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133715966-8c02e6fa/",
    "est_lo": 1110000,
-   "est_hi": 1273000
+   "est_hi": 1273000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 200000,
+   "price": 1500000,
+   "trans": "Автомат",
+   "city": "Сочи, Парусная улица, 22с1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133830088-ff67c8a4/",
+   "est_lo": 1275000,
+   "est_hi": 1334000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -978,7 +3252,8 @@
    "city": "Анапа, жилой комплекс Два Адмирала",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131005016-46e33e73/",
    "est_lo": 1146000,
-   "est_hi": 1303000
+   "est_hi": 1303000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -992,7 +3267,8 @@
    "city": "Армавир, площадь Ленина",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160598190-6139f735/",
    "est_lo": 1032000,
-   "est_hi": 1197000
+   "est_hi": 1197000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -1006,7 +3282,8 @@
    "city": "Краснодар",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133718653-1abf7236/",
    "est_lo": 1026000,
-   "est_hi": 1203000
+   "est_hi": 1203000,
+   "no_dtp": true
   },
   {
    "source": "auto.ru",
@@ -1020,7 +3297,23 @@
    "city": "Краснодар, жилой комплекс Грани",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1131526911-a7345690/",
    "est_lo": 1046000,
-   "est_hi": 1205000
+   "est_hi": 1205000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 131000,
+   "price": 1555000,
+   "trans": "Автомат",
+   "city": "Краснодар",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1133964586-95021509/",
+   "est_lo": 1027000,
+   "est_hi": 1189000,
+   "no_dtp": false
   },
   {
    "source": "auto.ru",
@@ -1034,7 +3327,38 @@
    "city": "Краснодар, Первомайская улица, 4Ак1, подъезд 1",
    "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1132106895-18947c40/",
    "est_lo": 1194000,
-   "est_hi": 1357000
+   "est_hi": 1357000,
+   "no_dtp": true
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2019,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 45000,
+   "price": 1730000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Ивана Сусанина, 44",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1127950907-828d09cb/",
+   "est_lo": 1204000,
+   "est_hi": 1389000,
+   "no_dtp": false
+  },
+  {
+   "source": "auto.ru",
+   "model": "Volkswagen Polo V Рестайлинг",
+   "year": 2018,
+   "vol": 1.6,
+   "hp": 110,
+   "mileage": 30765,
+   "price": 2222000,
+   "trans": "Автомат",
+   "city": "Краснодар, улица Будённого, 117/1",
+   "url": "https://auto.ru/cars/used/sale/volkswagen/polo/1128611946-ccb4a1e7/",
+   "est_lo": 1250000,
+   "est_hi": 1430000,
+   "no_dtp": false
   }
  ],
  "meta": {
@@ -1048,6 +3372,8 @@
    "Hyundai Solaris II",
    "Volkswagen Polo V Рестайлинг"
   ],
-  "how": "Собрано с auto.ru: «С пробегом», регион «Краснодар +200 км», фильтр «Без ДТП», только седан + автомат. Поколения: Kia Rio IV (2017–2020), Hyundai Solaris II (2017–2020), Volkswagen Polo V Рестайлинг (2014–2020) — рестайлинги Rio и Solaris не включены.<br><br>«Оценка» — диапазон авто.ру «с учётом техсостояния» по конкретной машине: пробег, число владельцев, комплектация, история. «Цена к оценке» — цена объявления к середине диапазона: зелёный ≤ 0%, жёлтый до +15%, красный выше.<br><br>На графике: усы — минимум и максимум цен в объявлениях, бокс — оценочный диапазон авто.ру, ● медиана и ▲ средняя по фактическим ценам.<br><br>Цены — запросы продавцов, не цены сделок."
+  "clean_n": 74,
+  "total_n": 224,
+  "how": "Собрано с auto.ru: «С пробегом», регион «Краснодар +200 км», только седан + автомат. Поколения: Kia Rio IV (2017–2020), Hyundai Solaris II (2017–2020), Volkswagen Polo V Рестайлинг (2014–2020) — рестайлинги Rio и Solaris не включены.<br><br>Всего 224 объявлений, из них без ДТП по отчётам авто.ру — 74. Переключатель «Без ДТП / Все» работает на вкладках «Объявления», «Свечи» и «Сводка».<br><br>«Оценка» — диапазон авто.ру «с учётом техсостояния» по конкретной машине: пробег, число владельцев, комплектация, история. «Цена к оценке» — цена объявления к середине диапазона: зелёный ≤ 0%, жёлтый до +15%, красный выше.<br><br>На свечах: усы — минимум и максимум цен в объявлениях, бокс — оценочный диапазон авто.ру, ● медиана и ▲ средняя по фактическим ценам.<br><br>Цены — запросы продавцов, не цены сделок."
  }
 }
