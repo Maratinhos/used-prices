@@ -1048,17 +1048,6 @@
   {
    "source": "avito",
    "model": "Hyundai Solaris I Рестайлинг",
-   "year": 2015,
-   "vol": 1.4,
-   "hp": 107,
-   "mileage": 225477,
-   "price": 910000,
-   "city": "Написать",
-   "url": "https://www.avito.ru/volgogradskaya_oblast_volzhskiy/avtomobili/hyundai_solaris_1.4_at_2015_225_477_km_8339214134"
-  },
-  {
-   "source": "avito",
-   "model": "Hyundai Solaris I Рестайлинг",
    "year": 2016,
    "vol": 1.6,
    "hp": 123,
@@ -1066,6 +1055,17 @@
    "price": 910000,
    "city": "Сочи",
    "url": "https://www.avito.ru/sochi/avtomobili/hyundai_solaris_1.6_at_2016_294_732_km_4646221284"
+  },
+  {
+   "source": "avito",
+   "model": "Hyundai Solaris I Рестайлинг",
+   "year": 2015,
+   "vol": 1.4,
+   "hp": 107,
+   "mileage": 225477,
+   "price": 910000,
+   "city": "Написать",
+   "url": "https://www.avito.ru/volgogradskaya_oblast_volzhskiy/avtomobili/hyundai_solaris_1.4_at_2015_225_477_km_8339214134"
   },
   {
    "source": "avito",
@@ -1114,17 +1114,6 @@
   {
    "source": "avito",
    "model": "Hyundai Solaris I Рестайлинг",
-   "year": 2016,
-   "vol": 1.4,
-   "hp": 107,
-   "mileage": 165718,
-   "price": 950000,
-   "city": "Написать",
-   "url": "https://www.avito.ru/volgograd/avtomobili/hyundai_solaris_1.4_at_2016_165_718_km_8364624609"
-  },
-  {
-   "source": "avito",
-   "model": "Hyundai Solaris I Рестайлинг",
    "year": 2015,
    "vol": 1.6,
    "hp": 123,
@@ -1132,6 +1121,17 @@
    "price": 950000,
    "city": "Написать",
    "url": "https://www.avito.ru/vasyurinskaya/avtomobili/hyundai_solaris_1.6_at_2015_160_000_km_8440938862"
+  },
+  {
+   "source": "avito",
+   "model": "Hyundai Solaris I Рестайлинг",
+   "year": 2016,
+   "vol": 1.4,
+   "hp": 107,
+   "mileage": 165718,
+   "price": 950000,
+   "city": "Написать",
+   "url": "https://www.avito.ru/volgograd/avtomobili/hyundai_solaris_1.4_at_2016_165_718_km_8364624609"
   },
   {
    "source": "avito",
@@ -1213,17 +1213,6 @@
   {
    "source": "avito",
    "model": "Hyundai Solaris I Рестайлинг",
-   "year": 2016,
-   "vol": 1.6,
-   "hp": 123,
-   "mileage": 146000,
-   "price": 975000,
-   "city": "Армавир",
-   "url": "https://www.avito.ru/armavir/avtomobili/hyundai_solaris_1.6_at_2016_146_000_km_8308471876"
-  },
-  {
-   "source": "avito",
-   "model": "Hyundai Solaris I Рестайлинг",
    "year": 2015,
    "vol": 1.6,
    "hp": 123,
@@ -1275,6 +1264,17 @@
    "price": 990000,
    "city": "Написать",
    "url": "https://www.avito.ru/krasnodar/avtomobili/hyundai_solaris_1.6_at_2015_245_000_km_8557638964"
+  },
+  {
+   "source": "avito",
+   "model": "Hyundai Solaris I Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 149000,
+   "price": 997000,
+   "city": "Краснодар",
+   "url": "https://www.avito.ru/krasnodar/avtomobili/hyundai_solaris_1.6_at_2015_149_000_km_8437982337"
   },
   {
    "source": "avito",
@@ -1598,17 +1598,6 @@
   {
    "source": "avito",
    "model": "Hyundai Solaris I Рестайлинг",
-   "year": 2015,
-   "vol": 1.6,
-   "hp": 123,
-   "mileage": 175000,
-   "price": 1150000,
-   "city": "Усть-Лабинск",
-   "url": "https://www.avito.ru/ust-labinsk/avtomobili/hyundai_solaris_1.6_at_2015_175_000_km_8149931806"
-  },
-  {
-   "source": "avito",
-   "model": "Hyundai Solaris I Рестайлинг",
    "year": 2016,
    "vol": 1.6,
    "hp": 123,
@@ -1616,6 +1605,17 @@
    "price": 1150000,
    "city": "Славянск-на-Кубани",
    "url": "https://www.avito.ru/slavyansk-na-kubani/avtomobili/hyundai_solaris_1.6_at_2016_97_000_km_3560143756"
+  },
+  {
+   "source": "avito",
+   "model": "Hyundai Solaris I Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 175000,
+   "price": 1150000,
+   "city": "Усть-Лабинск",
+   "url": "https://www.avito.ru/ust-labinsk/avtomobili/hyundai_solaris_1.6_at_2015_175_000_km_8149931806"
   },
   {
    "source": "avito",
@@ -2298,6 +2298,17 @@
    "price": 699000,
    "city": "Написать",
    "url": "https://www.avito.ru/moskva/avtomobili/kia_rio_1.6_at_2015_147_000_km_8194506366"
+  },
+  {
+   "source": "avito",
+   "model": "Kia Rio III Рестайлинг",
+   "year": 2015,
+   "vol": 1.6,
+   "hp": 123,
+   "mileage": 250000,
+   "price": 700000,
+   "city": "Краснодар",
+   "url": "https://www.avito.ru/krasnodar/avtomobili/kia_rio_1.6_at_2015_250_000_km_8050651660"
   },
   {
    "source": "avito",
@@ -3303,6 +3314,17 @@
   {
    "source": "avito",
    "model": "Volkswagen Polo V",
+   "year": 2011,
+   "vol": 1.6,
+   "hp": 105,
+   "mileage": 198600,
+   "price": 585000,
+   "city": "Краснодар",
+   "url": "https://www.avito.ru/krasnodar/avtomobili/volkswagen_polo_1.6_at_2011_198_600_km_8473729733"
+  },
+  {
+   "source": "avito",
+   "model": "Volkswagen Polo V",
    "year": 2012,
    "vol": 1.6,
    "hp": 105,
@@ -3929,7 +3951,7 @@
    "Hyundai Solaris I Рестайлинг",
    "Volkswagen Polo V"
   ],
-  "total_n": 356,
-  "how": "Источники: auto.ru («С пробегом») и Авито. Регион «Краснодар +200 км», радиус 200 км, только седан + автомат. Модели: Kia Rio III Рестайлинг (2015–2017), Hyundai Solaris I Рестайлинг (2014–2017), Volkswagen Polo V (2009–2015).<br><br>Всего 356 объявлений: auto.ru — 131, Авито — 225.<br><br>Свеча — распределение цен объявлений под выбранные фильтры: усы — минимум и максимум, бокс — 10-й и 90-й перцентили, зелёная линия — медиана, синяя — среднее.<br><br>Цены — запросы продавцов, не цены сделок."
+  "total_n": 358,
+  "how": "Источники: auto.ru («С пробегом») и Авито. Регион «Краснодар +200 км», радиус 200 км, только седан + автомат. Модели: Kia Rio III Рестайлинг (2015–2017), Hyundai Solaris I Рестайлинг (2014–2017), Volkswagen Polo V (2009–2015).<br><br>Всего 358 объявлений: auto.ru — 131, Авито — 227.<br><br>Свеча — распределение цен объявлений под выбранные фильтры: усы — минимум и максимум, бокс — 10-й и 90-й перцентили, зелёная линия — медиана, синяя — среднее.<br><br>Цены — запросы продавцов, не цены сделок."
  }
 }
