@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f8cff'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%E2%82%BD%3C/text%3E%3C/svg%3E">
+<title>Цены на б/у · Kia Rio III, Solaris I, Polo V</title>
+<style>
+:root{
+  --bg:#0f1115; --card:#171a21; --line:#2a2f3a;
+  --fg:#e9ecf1; --muted:#8b93a3; --accent:#4f8cff; --good:#38d39f; --warn:#ffb02e; --bad:#ff5c5c;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
+  font-size:14px;line-height:1.35}
+body{padding-bottom:16px}
+header{position:sticky;top:0;z-index:20;background:rgba(15,17,21,.97);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);padding:9px 12px 8px}
+h1{font-size:15px;margin:0 0 2px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:11px}
+.tabs{display:flex;gap:6px;margin-top:8px}
+.tab{flex:1;text-align:center;padding:6px 0;border-radius:9px;background:var(--card);
+  color:var(--muted);font-size:12px;border:1px solid var(--line)}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.filters{padding:9px 12px 4px;display:flex;flex-direction:column;gap:7px}
+.row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.row::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;padding:6px 11px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--muted);font-size:12.5px;white-space:nowrap}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+select{width:100%;background:var(--card);color:var(--fg);border:1px solid var(--line);
+  border-radius:10px;padding:9px 10px;font-size:13px;appearance:none}
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:4px 12px 10px}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:8px 9px;min-width:0}
+.kpi .l{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .v{font-size:14.5px;font-weight:650;margin-top:2px;white-space:nowrap}
+.list{padding:0 12px;display:flex;flex-direction:column;gap:8px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:11px 12px}
+.item a{color:inherit;text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.price{font-size:16.5px;font-weight:700;white-space:nowrap}
+.title{font-size:12px;color:var(--muted);text-align:right}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:5px;color:var(--muted);font-size:12px}
+.srow{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.stop{font-size:13px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.sn{color:var(--muted);font-size:11.5px;white-space:nowrap}
+.sline{font-size:12.5px;margin-top:4px}
+.sline.dim{color:var(--muted);margin-top:2px}
+.wrap{padding:10px 12px}
+.note{color:var(--muted);font-size:12px;padding:0 12px 12px}
+.hidden{display:none}
+.foot{color:var(--muted);font-size:11px;padding:14px 12px 0;text-align:center}
+/* карточка со свечами */
+.chartcard{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:6px 12px 10px;padding:10px 8px 8px}
+.cline{display:flex;align-items:stretch;gap:0}
+.single{flex:1;display:flex;justify-content:center}
+.single svg{overflow:visible}
+.legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:11px;padding:0 4px 8px}
+.legend b{font-weight:600}
+.empty{color:var(--muted);font-size:12.5px;padding:24px 10px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="h1">Цены на б/у · седан · АКПП</h1>
+  <div class="sub" id="sub"></div>
+  <div class="tabs">
+    <div class="tab on" data-tab="chart">Свечи</div>
+    <div class="tab" data-tab="list">Объявления</div>
+    <div class="tab" data-tab="sum">Сводка</div>
+    <div class="tab" data-tab="how">Методика</div>
+  </div>
+</header>
+
+<div id="tab-chart">
+  <div class="filters">
+    <div class="row" id="f-src"></div>
+    <div class="row" id="f-model"></div>
+    <div class="row" id="f-year"></div>
+    <div class="row" id="f-mil"></div>
+  </div>
+  <div class="chartcard">
+    <div class="legend">
+      <span><b style="color:#5c6474">│</b> мин–макс</span>
+      <span><b style="color:#4f8cff">▮</b> P10–P90</span>
+      <span><b style="color:#38d39f">—</b> медиана</span>
+      <span><b style="color:#4f8cff">┄</b> среднее</span>
+    </div>
+    <div class="cline">
+      <div class="axis" id="axis"></div>
+      <div class="single" id="single"></div>
+    </div>
+  </div>
+  <div class="note" id="chartnote"></div>
+</div>
+
+<div id="tab-list" class="hidden">
+  <div class="filters">
+    <div class="row" id="f-src2"></div>
+    <div class="row" id="f-model2"></div>
+    <div class="row" id="f-year2"></div>
+    <div class="row" id="f-mil2"></div>
+    <select id="f-sort">
+      <option value="price-asc">Цена: по возрастанию</option>
+      <option value="price-desc">Цена: по убыванию</option>
+      <option value="mile-asc">Пробег: по возрастанию</option>
+      <option value="year-desc">Год: новые</option>
+    </select>
+  </div>
+  <div class="kpi" id="kpi"></div>
+  <div class="list" id="list"></div>
+</div>
+
+<div id="tab-sum" class="hidden">
+  <div class="wrap" id="sum"></div>
+  <div class="note">Усы — минимум и максимум, бокс — P10–P90. Считается по тем же фильтрам, что и свеча.</div>
+</div>
+
+<div id="tab-how" class="hidden"><div class="note" id="how"></div></div>
+
+<div class="foot">данные: <span id="srcs"></span> · обновлено <span id="upd"></span></div>
+
+<script>
+const DATA = __DATA__;
+const META = __META__;
+const kmoney = n => n==null ? '—' : (n>=1000000 ? (n/1000000).toFixed(2).replace('.',',')+' млн ₽' : Math.round(n/1000)+' тыс ₽');
+const short = n => n==null ? '—' : (n>=1000000 ? (n/1e6).toFixed(2).replace('.',',')+' млн' : Math.round(n/1000)+' тыс');
+const money = n => n==null ? '—' : n.toLocaleString('ru-RU').replace(/\u00a0/g,' ') + ' ₽';
+
+const MODELS = META.models || [...new Set(DATA.map(r=>r.model))];
+const SHORT = {
+  'Kia Rio III Рестайлинг':'Rio III рест.',
+  'Hyundai Solaris I Рестайлинг':'Solaris I рест.',
+  'Volkswagen Polo V':'Polo V'
+};
+let state = {src:'all', model:'all', year:'all', mil:'all', sort:'price-asc'};
+
+function bySrc(rows){ return state.src==='all' ? rows : rows.filter(r=>r.source===state.src); }
+function byModel(rows){ return state.model==='all' ? rows : rows.filter(r=>r.model===state.model); }
+function base(){ return byModel(bySrc(DATA)); }
+function filt(){
+  return base().filter(r =>
+    (state.year==='all' || r.year===state.year) &&
+    (state.mil==='all' || (state.mil==='lt100' && r.mileage<100000) ||
+      (state.mil==='100_200' && r.mileage>=100000 && r.mileage<200000) ||
+      (state.mil==='gt200' && r.mileage>=200000)));
+}
+function med(a){ if(!a.length) return null; const b=[...a].sort((x,y)=>x-y); const m=b.length>>1;
+  return b.length%2 ? b[m] : Math.round((b[m-1]+b[m])/2); }
+function q(a,t){ const b=[...a].sort((x,y)=>x-y); if(!b.length) return null;
+  const k=(b.length-1)*t, f=Math.floor(k), c=Math.min(f+1,b.length-1);
+  return Math.round(b[f]+(b[c]-b[f])*(k-f)); }
+function mean(a){ return a.length ? Math.round(a.reduce((x,y)=>x+y,0)/a.length) : null; }
+
+function chips(el, items, cur, attr, onpick){
+  if(!el) return;
+  el.innerHTML = items.map(([v,t])=>`<div class="chip ${String(cur)===String(v)?'on':''}" ${attr}="${v}">${t}</div>`).join('');
+  el.querySelectorAll('.chip').forEach(c=>c.onclick=()=>onpick(c.getAttribute(attr)));
+}
+function renderFilters(){
+  const baseRows = base();
+  const years = [...new Set(baseRows.map(r=>r.year))].sort();
+  const src = [['all','Все источники'],['auto.ru','auto.ru'],['avito','Авито']];
+  const mdl = [['all','Все модели'],...MODELS.map(m=>[m, SHORT[m]||m])];
+  const mil = [['all','Любой пробег'],['lt100','до 100 тыс'],['100_200','100–200 тыс'],['gt200','200+ тыс']];
+  ['','2'].forEach(sfx=>{
+    chips(document.getElementById('f-src'+sfx), src, state.src, 'data-s', v=>{state.src=v; renderAll();});
+    chips(document.getElementById('f-model'+sfx), mdl, state.model, 'data-m', v=>{state.model=v; state.year='all'; renderAll();});
+    chips(document.getElementById('f-year'+sfx), [['all','Все годы'],...years.map(y=>[y,y])], state.year, 'data-y',
+          v=>{state.year = v==='all' ? 'all' : +v; renderAll();});
+    chips(document.getElementById('f-mil'+sfx), mil, state.mil, 'data-k', v=>{state.mil=v; renderAll();});
+  });
+}
+
+function groups(){
+  const rows = filt();
+  const g = {};
+  rows.forEach(r=>{
+    let key, name, sub;
+    if(state.model==='all'){
+      name = SHORT[r.model] || r.model;
+      sub = state.src==='all' ? (r.source==='avito' ? 'Авито' : 'auto.ru') : '';
+      key = name + '|' + sub;
+    } else {
+      name = String(r.year);
+      sub = Number(r.vol).toFixed(1) + ' л';
+      key = name + '|' + sub;
+    }
+    (g[key]=g[key]||[]).push(r.price);
+  });
+  return Object.keys(g).sort().map(k=>{
+    const p = g[k];
+    const [name, sub] = k.split('|');
+    const iqr = q(p,.75) - q(p,.25);
+    const lo = q(p,.25) - 1.5*iqr, hi = q(p,.75) + 1.5*iqr;
+    const inner = p.filter(v=>v>=lo && v<=hi);
+    const out = p.filter(v=>v<lo || v>hi);
+    return {label:k, name, sub, n:p.length, p10:q(p,.10), p25:q(p,.25), median:med(p), mean:mean(p),
+            p75:q(p,.75), p90:q(p,.90), min:Math.min(...inner), max:Math.max(...inner),
+            out: out.slice(0, 40)};
+  });
+}
+
+function renderChart(){
+  const rows = filt();
+  const axis = document.getElementById('axis');
+  const host = document.getElementById('single');
+  const note = document.getElementById('chartnote');
+  const p = rows.map(r=>r.price);
+  if(!p.length){
+    axis.innerHTML=''; host.innerHTML='<div class="empty">Под фильтр ничего не попало</div>'; note.textContent='';
+    return;
+  }
+  const s = {n:p.length, min:Math.min(...p), max:Math.max(...p), p10:q(p,.10), p90:q(p,.90),
+             median:med(p), mean:mean(p)};
+  const W = 340, H = 386, top = 46, bot = 54, plotH = H - top - bot;
+  const span = (s.max - s.min) || 1;
+  const lo = s.min - span*0.03, hi = s.max + span*0.03;
+  const y = v => top + (hi - v)/(hi - lo) * plotH;
+  const cx = W/2, bw = 116;
+
+  let ax = `<svg width="42" height="${H}">`;
+  for(let i=0;i<=4;i++){
+    const v = lo + (hi-lo)*i/4, yy = y(v);
+    ax += `<text x="38" y="${yy+3.5}" fill="#8b93a3" font-size="9.5" text-anchor="end">${short(v)}</text>`;
+    ax += `<line x1="40" y1="${yy}" x2="42" y2="${yy}" stroke="#2a2f3a"/>`;
+  }
+  ax += `</svg>`;
+  axis.innerHTML = ax;
+
+  const yMin = y(s.min), yMax = y(s.max), yP90 = y(s.p90), yP10 = y(s.p10);
+  let g = `<svg width="${W}" height="${H}">`;
+  for(let i=0;i<=4;i++){
+    const v = lo + (hi-lo)*i/4, yy = y(v);
+    g += `<line x1="0" y1="${yy}" x2="${W}" y2="${yy}" stroke="#20252f"/>`;
+  }
+  // усы мин–макс
+  g += `<line x1="${cx}" y1="${yMax}" x2="${cx}" y2="${yMin}" stroke="#5c6474" stroke-width="1.6"/>`;
+  g += `<line x1="${cx-16}" y1="${yMax}" x2="${cx+16}" y2="${yMax}" stroke="#5c6474" stroke-width="1.6"/>`;
+  g += `<line x1="${cx-16}" y1="${yMin}" x2="${cx+16}" y2="${yMin}" stroke="#5c6474" stroke-width="1.6"/>`;
+  // бокс P10–P90
+  g += `<rect x="${cx-bw/2}" y="${Math.min(yP90,yP10)}" width="${bw}" height="${Math.max(3,Math.abs(yP10-yP90))}"
+          rx="4" fill="#4f8cff" fill-opacity="0.26" stroke="#4f8cff" stroke-width="1.5"/>`;
+  // подписи P10/P90 внутри бокса
+  g += `<text x="${cx}" y="${yP90+17}" fill="#9dc0ff" font-size="12" font-weight="600" text-anchor="middle">${short(s.p90)}</text>`;
+  g += `<text x="${cx}" y="${yP10-8}" fill="#9dc0ff" font-size="12" font-weight="600" text-anchor="middle">${short(s.p10)}</text>`;
+  // среднее — синяя линия, подпись слева
+  g += `<line x1="${cx-bw/2-6}" y1="${y(s.mean)}" x2="${cx+bw/2+6}" y2="${y(s.mean)}" stroke="#4f8cff" stroke-width="2" stroke-dasharray="6 3"/>`;
+  g += `<text x="${cx-bw/2-12}" y="${y(s.mean)+4}" fill="#4f8cff" font-size="13" font-weight="700" text-anchor="end">${short(s.mean)}</text>`;
+  // медиана — зелёная линия, подпись справа
+  g += `<line x1="${cx-bw/2-6}" y1="${y(s.median)}" x2="${cx+bw/2+6}" y2="${y(s.median)}" stroke="#38d39f" stroke-width="2.6"/>`;
+  g += `<text x="${cx+bw/2+12}" y="${y(s.median)+4}" fill="#38d39f" font-size="13" font-weight="700" text-anchor="start">${short(s.median)}</text>`;
+  // максимум / минимум
+  g += `<text x="${cx}" y="${yMax-10}" fill="#c8cfda" font-size="12.5" font-weight="600" text-anchor="middle">${short(s.max)}</text>`;
+  g += `<text x="${cx}" y="${yMin+20}" fill="#c8cfda" font-size="12.5" font-weight="600" text-anchor="middle">${short(s.min)}</text>`;
+  g += `</svg>`;
+  host.innerHTML = g;
+
+  const parts = [];
+  if(state.src!=='all') parts.push(state.src==='avito'?'Авито':'auto.ru');
+  if(state.model!=='all') parts.push(SHORT[state.model]||state.model);
+  if(state.year!=='all') parts.push(String(state.year));
+  if(state.mil!=='all') parts.push({lt100:'до 100 тыс км','100_200':'100–200 тыс км',gt200:'200+ тыс км'}[state.mil]);
+  note.textContent = `${parts.length?parts.join(' · '):'Все объявления'} · n=${s.n} · усы мин–макс, бокс P10–P90`;
+}
+
+function renderKpi(rows){
+  const p = rows.map(r=>r.price);
+  const items = [
+    ['объявлений', rows.length],
+    ['медиана', kmoney(med(p))],
+    ['средняя', p.length?kmoney(mean(p)):'—'],
+    ['P10–P90', p.length?short(q(p,.10))+' – '+short(q(p,.90)):'—'],
+    ['минимум', kmoney(p.length?Math.min(...p):null)],
+    ['максимум', kmoney(p.length?Math.max(...p):null)],
+  ];
+  document.getElementById('kpi').innerHTML = items.map(([l,v])=>
+    `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join('');
+}
+
+function renderList(){
+  const rows = filt().slice();
+  const s = state.sort, cp=(a,b)=>a.price-b.price;
+  if(s==='price-asc') rows.sort(cp);
+  if(s==='price-desc') rows.sort((a,b)=>b.price-a.price);
+  if(s==='mile-asc') rows.sort((a,b)=>a.mileage-b.mileage);
+  if(s==='year-desc') rows.sort((a,b)=>b.year-a.year || cp(a,b));
+  renderKpi(rows);
+  document.getElementById('list').innerHTML = rows.map(r=>`
+    <div class="item"><a href="${r.url}" target="_blank" rel="noopener">
+      <div class="top"><div class="price">${money(r.price)}</div>
+        <div class="title">${r.model}<br>${r.year} · ${r.vol} л · ${r.hp} л.с.</div></div>
+      <div class="meta"><span>${r.mileage.toLocaleString('ru-RU')} км</span><span>Автомат</span>
+        <span>${(r.city||'').split(',')[0]}</span><span>${r.source==='avito'?'Авито':'auto.ru'}</span></div>
+    </a></div>`).join('') || '<div class="note">Под фильтр ничего не попало.</div>';
+}
+
+function renderSum(){
+  document.getElementById('sum').innerHTML = groups().map(g=>`
+    <div class="srow">
+      <div class="stop"><b>${g.label.replace('|',' · ')}</b><span class="sn">${g.n} объявл.</span></div>
+      <div class="sline">медиана <b>${kmoney(g.median)}</b> · среднее ${kmoney(g.mean)}</div>
+      <div class="sline dim">P10–P90 ${kmoney(g.p10)}–${kmoney(g.p90)} · мин–макс ${kmoney(g.min)}–${kmoney(g.max)}</div>
+    </div>`).join('') || '<div class="note">Под фильтр ничего не попало.</div>';
+}
+
+function renderAll(){ renderFilters(); renderChart(); renderList(); renderSum(); }
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on', x===t));
+  ['chart','list','sum','how'].forEach(id=>document.getElementById('tab-'+id)
+    .classList.toggle('hidden', id!==t.dataset.tab));
+  window.scrollTo(0,0);
+});
+document.getElementById('f-sort').onchange = e => { state.sort = e.target.value; renderList(); };
+
+document.getElementById('sub').textContent =
+  `${META.region} · ${META.updated} · ${META.total_n} объявл. · ${MODELS.length} модели · ${META.sources.join(', ')}`;
+document.getElementById('srcs').textContent = META.sources.join(', ');
+document.getElementById('upd').textContent = META.updated;
+document.getElementById('how').innerHTML = META.how;
+
+renderAll();
+</script>
+</body>
+</html>
