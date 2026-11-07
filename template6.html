@@ -62,6 +62,8 @@ select{width:100%;background:var(--card);color:var(--fg);border:1px solid var(--
 .cscroll{flex:1;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
 .cscroll::-webkit-scrollbar{display:none}
 .crow{display:flex}
+.crow svg{overflow:visible}
+.crow svg + svg{margin-left:6px}
 .legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:11px;padding:0 4px 8px}
 .legend b{font-weight:600}
 .empty{color:var(--muted);font-size:12.5px;padding:24px 10px;text-align:center}
@@ -189,8 +191,8 @@ function groups(){
       sub = state.src==='all' ? (r.source==='avito' ? 'Авито' : 'auto.ru') : '';
       key = name + '|' + sub;
     } else {
-      name = r.year;
-      sub = r.vol + '/' + r.hp;
+      name = String(r.year);
+      sub = Number(r.vol).toFixed(1) + ' л';
       key = name + '|' + sub;
     }
     (g[key]=g[key]||[]).push(r.price);
